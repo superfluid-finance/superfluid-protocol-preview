@@ -4,7 +4,9 @@ Welcome to the preview version of the Superfluid protocol.
 
 ## Ethereum Contracts
 
-The ethereum contracts is published under the `ethereum-contracts` folder. Currently the core logics are not yet published, but they are coming very soon!
+The ethereum contracts is published under the `ethereum-contracts` folder.
+
+Currently the core logics are not yet published publicly, but they will be coming very soon!
 
 ### Integration
 
@@ -15,7 +17,7 @@ $ npm install --save @superfluid-finance/ethereum-contracts
 $ npm install --save @truffle/contract
 ```
 
-To start with the SDK:
+To start with the SDK (with Goerli testnet):
 
 ```
 const SuperfluidSDK = require("@superfluid-finance/ethereum-contracts");
