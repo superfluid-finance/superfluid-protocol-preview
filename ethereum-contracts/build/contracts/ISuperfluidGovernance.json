@@ -1,0 +1,1583 @@
+{
+  "contractName": "ISuperfluidGovernance",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "superToken",
+          "type": "address"
+        }
+      ],
+      "name": "getRewardAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "rewardAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "superToken",
+          "type": "address"
+        }
+      ],
+      "name": "getLiquidationPeriod",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "period",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "agreementClass",
+          "type": "address"
+        }
+      ],
+      "name": "addAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "agreementClass",
+          "type": "address"
+        }
+      ],
+      "name": "isAgreementListed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "yes",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "bitmap",
+          "type": "uint256"
+        }
+      ],
+      "name": "mapAgreements",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "agreementClasses",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "bitmap",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "agreementClass",
+          "type": "address"
+        }
+      ],
+      "name": "maskAgreementBit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "newBitmap",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "bitmap",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "agreementClass",
+          "type": "address"
+        }
+      ],
+      "name": "unmaskAgreementBit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "newBitmap",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.1+commit.f4a555be\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"agreementClass\",\"type\":\"address\"}],\"name\":\"addAgreement\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"superToken\",\"type\":\"address\"}],\"name\":\"getLiquidationPeriod\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"period\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"superToken\",\"type\":\"address\"}],\"name\":\"getRewardAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"rewardAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"agreementClass\",\"type\":\"address\"}],\"name\":\"isAgreementListed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"yes\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"bitmap\",\"type\":\"uint256\"}],\"name\":\"mapAgreements\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"agreementClasses\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"bitmap\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"agreementClass\",\"type\":\"address\"}],\"name\":\"maskAgreementBit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"newBitmap\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"bitmap\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"agreementClass\",\"type\":\"address\"}],\"name\":\"unmaskAgreementBit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"newBitmap\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Superfluid\",\"details\":\"Superfluid's Governance interface\",\"kind\":\"dev\",\"methods\":{\"addAgreement(address)\":{\"details\":\"Add an agreement to the whitelist\"},\"getLiquidationPeriod(address)\":{\"details\":\"Get the Period that is allowed to perform a liquidation\",\"params\":{\"superToken\":\"Super token address.\"}},\"getRewardAddress(address)\":{\"details\":\"Get the Reward address that receives the liquidation fees.\",\"params\":{\"superToken\":\"Super token address.\"}},\"isAgreementListed(address)\":{\"details\":\"Check if the agreement is whitelisted\"},\"mapAgreements(uint256)\":{\"details\":\"Map list of the agreements using a bitmap\",\"params\":{\"bitmap\":\"Agreement class ID based bitmap\"}},\"maskAgreementBit(uint256,address)\":{\"details\":\"Create a new bitmask by adding agreement class to it.\"},\"unmaskAgreementBit(uint256,address)\":{\"details\":\"Create a new bitmask by removing agreement class from it.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol\":\"ISuperfluidGovernance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol\":{\"keccak256\":\"0xf1fc334274dc956d0508ab5d3037979de789e9e858ecc346b87cdec472d7261b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://950a5fd2942ee58611ea24bbe23d0e6cbb83f6e5c32384134c85f179c373dbb1\",\"dweb:/ipfs/QmdcZkqVuxTu5C5NhpbSXYunUDkZbcs8NMxBW1EYtThAtY\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "sourcePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+  "ast": {
+    "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+    "exportedSymbols": {
+      "ISuperfluidGovernance": [
+        7660
+      ]
+    },
+    "id": 7661,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7599,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:25:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7600,
+          "nodeType": "StructuredDocumentation",
+          "src": "60:74:14",
+          "text": " @dev Superfluid's Governance interface\n @author Superfluid"
+        },
+        "fullyImplemented": false,
+        "id": 7660,
+        "linearizedBaseContracts": [
+          7660
+        ],
+        "name": "ISuperfluidGovernance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 7601,
+              "nodeType": "StructuredDocumentation",
+              "src": "174:128:14",
+              "text": " @dev Get the Reward address that receives the liquidation fees.\n @param superToken Super token address."
+            },
+            "functionSelector": "0e327ee8",
+            "id": 7608,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRewardAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7604,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7603,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7608,
+                  "src": "342:18:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7602,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "342:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "332:34:14"
+            },
+            "returnParameters": {
+              "id": 7607,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7606,
+                  "mutability": "mutable",
+                  "name": "rewardAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7608,
+                  "src": "413:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7605,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:23:14"
+            },
+            "scope": 7660,
+            "src": "307:129:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7609,
+              "nodeType": "StructuredDocumentation",
+              "src": "442:125:14",
+              "text": " @dev Get the Period that is allowed to perform a liquidation\n @param superToken Super token address."
+            },
+            "functionSelector": "bf9149f2",
+            "id": 7616,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLiquidationPeriod",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7612,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7611,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7616,
+                  "src": "611:18:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7610,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "611:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "601:34:14"
+            },
+            "returnParameters": {
+              "id": 7615,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7614,
+                  "mutability": "mutable",
+                  "name": "period",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7616,
+                  "src": "682:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7613,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "682:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "681:16:14"
+            },
+            "scope": 7660,
+            "src": "572:126:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7617,
+              "nodeType": "StructuredDocumentation",
+              "src": "704:57:14",
+              "text": " @dev Add an agreement to the whitelist"
+            },
+            "functionSelector": "09fa423e",
+            "id": 7622,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addAgreement",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7620,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7619,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7622,
+                  "src": "788:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7618,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "788:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "787:24:14"
+            },
+            "returnParameters": {
+              "id": 7621,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "820:0:14"
+            },
+            "scope": 7660,
+            "src": "766:55:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7623,
+              "nodeType": "StructuredDocumentation",
+              "src": "827:61:14",
+              "text": " @dev Check if the agreement is whitelisted"
+            },
+            "functionSelector": "f9029be5",
+            "id": 7630,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAgreementListed",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7626,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7625,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7630,
+                  "src": "920:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7624,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "920:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "919:24:14"
+            },
+            "returnParameters": {
+              "id": 7629,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7628,
+                  "mutability": "mutable",
+                  "name": "yes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7630,
+                  "src": "982:8:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7627,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "982:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "981:10:14"
+            },
+            "scope": 7660,
+            "src": "893:99:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7631,
+              "nodeType": "StructuredDocumentation",
+              "src": "998:118:14",
+              "text": " @dev Map list of the agreements using a bitmap\n @param bitmap Agreement class ID based bitmap"
+            },
+            "functionSelector": "bebb6f2f",
+            "id": 7639,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mapAgreements",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7634,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7633,
+                  "mutability": "mutable",
+                  "name": "bitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7639,
+                  "src": "1144:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7632,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1144:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1143:16:14"
+            },
+            "returnParameters": {
+              "id": 7638,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7637,
+                  "mutability": "mutable",
+                  "name": "agreementClasses",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7639,
+                  "src": "1199:33:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 7635,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1199:7:14",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 7636,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1199:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1198:35:14"
+            },
+            "scope": 7660,
+            "src": "1121:113:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7640,
+              "nodeType": "StructuredDocumentation",
+              "src": "1240:77:14",
+              "text": " @dev Create a new bitmask by adding agreement class to it."
+            },
+            "functionSelector": "2444d97e",
+            "id": 7649,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "maskAgreementBit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7642,
+                  "mutability": "mutable",
+                  "name": "bitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7649,
+                  "src": "1348:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7641,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1348:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7644,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7649,
+                  "src": "1364:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7643,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1364:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1347:40:14"
+            },
+            "returnParameters": {
+              "id": 7648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7647,
+                  "mutability": "mutable",
+                  "name": "newBitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7649,
+                  "src": "1427:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7646,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1427:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1426:19:14"
+            },
+            "scope": 7660,
+            "src": "1322:124:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7650,
+              "nodeType": "StructuredDocumentation",
+              "src": "1452:81:14",
+              "text": " @dev Create a new bitmask by removing agreement class from it."
+            },
+            "functionSelector": "2765f6b7",
+            "id": 7659,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unmaskAgreementBit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7655,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7652,
+                  "mutability": "mutable",
+                  "name": "bitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7659,
+                  "src": "1566:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7651,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1566:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7654,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7659,
+                  "src": "1582:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7653,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1582:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1565:40:14"
+            },
+            "returnParameters": {
+              "id": 7658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7657,
+                  "mutability": "mutable",
+                  "name": "newBitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7659,
+                  "src": "1645:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7656,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1645:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1644:19:14"
+            },
+            "scope": 7660,
+            "src": "1538:126:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7661,
+        "src": "135:1532:14"
+      }
+    ],
+    "src": "32:1636:14"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+    "exportedSymbols": {
+      "ISuperfluidGovernance": [
+        7660
+      ]
+    },
+    "id": 7661,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7599,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:25:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7600,
+          "nodeType": "StructuredDocumentation",
+          "src": "60:74:14",
+          "text": " @dev Superfluid's Governance interface\n @author Superfluid"
+        },
+        "fullyImplemented": false,
+        "id": 7660,
+        "linearizedBaseContracts": [
+          7660
+        ],
+        "name": "ISuperfluidGovernance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 7601,
+              "nodeType": "StructuredDocumentation",
+              "src": "174:128:14",
+              "text": " @dev Get the Reward address that receives the liquidation fees.\n @param superToken Super token address."
+            },
+            "functionSelector": "0e327ee8",
+            "id": 7608,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRewardAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7604,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7603,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7608,
+                  "src": "342:18:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7602,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "342:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "332:34:14"
+            },
+            "returnParameters": {
+              "id": 7607,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7606,
+                  "mutability": "mutable",
+                  "name": "rewardAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7608,
+                  "src": "413:21:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7605,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:23:14"
+            },
+            "scope": 7660,
+            "src": "307:129:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7609,
+              "nodeType": "StructuredDocumentation",
+              "src": "442:125:14",
+              "text": " @dev Get the Period that is allowed to perform a liquidation\n @param superToken Super token address."
+            },
+            "functionSelector": "bf9149f2",
+            "id": 7616,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLiquidationPeriod",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7612,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7611,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7616,
+                  "src": "611:18:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7610,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "611:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "601:34:14"
+            },
+            "returnParameters": {
+              "id": 7615,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7614,
+                  "mutability": "mutable",
+                  "name": "period",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7616,
+                  "src": "682:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7613,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "682:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "681:16:14"
+            },
+            "scope": 7660,
+            "src": "572:126:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7617,
+              "nodeType": "StructuredDocumentation",
+              "src": "704:57:14",
+              "text": " @dev Add an agreement to the whitelist"
+            },
+            "functionSelector": "09fa423e",
+            "id": 7622,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addAgreement",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7620,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7619,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7622,
+                  "src": "788:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7618,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "788:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "787:24:14"
+            },
+            "returnParameters": {
+              "id": 7621,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "820:0:14"
+            },
+            "scope": 7660,
+            "src": "766:55:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7623,
+              "nodeType": "StructuredDocumentation",
+              "src": "827:61:14",
+              "text": " @dev Check if the agreement is whitelisted"
+            },
+            "functionSelector": "f9029be5",
+            "id": 7630,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAgreementListed",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7626,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7625,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7630,
+                  "src": "920:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7624,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "920:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "919:24:14"
+            },
+            "returnParameters": {
+              "id": 7629,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7628,
+                  "mutability": "mutable",
+                  "name": "yes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7630,
+                  "src": "982:8:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7627,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "982:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "981:10:14"
+            },
+            "scope": 7660,
+            "src": "893:99:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7631,
+              "nodeType": "StructuredDocumentation",
+              "src": "998:118:14",
+              "text": " @dev Map list of the agreements using a bitmap\n @param bitmap Agreement class ID based bitmap"
+            },
+            "functionSelector": "bebb6f2f",
+            "id": 7639,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mapAgreements",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7634,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7633,
+                  "mutability": "mutable",
+                  "name": "bitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7639,
+                  "src": "1144:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7632,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1144:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1143:16:14"
+            },
+            "returnParameters": {
+              "id": 7638,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7637,
+                  "mutability": "mutable",
+                  "name": "agreementClasses",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7639,
+                  "src": "1199:33:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 7635,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1199:7:14",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 7636,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1199:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1198:35:14"
+            },
+            "scope": 7660,
+            "src": "1121:113:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7640,
+              "nodeType": "StructuredDocumentation",
+              "src": "1240:77:14",
+              "text": " @dev Create a new bitmask by adding agreement class to it."
+            },
+            "functionSelector": "2444d97e",
+            "id": 7649,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "maskAgreementBit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7642,
+                  "mutability": "mutable",
+                  "name": "bitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7649,
+                  "src": "1348:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7641,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1348:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7644,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7649,
+                  "src": "1364:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7643,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1364:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1347:40:14"
+            },
+            "returnParameters": {
+              "id": 7648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7647,
+                  "mutability": "mutable",
+                  "name": "newBitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7649,
+                  "src": "1427:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7646,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1427:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1426:19:14"
+            },
+            "scope": 7660,
+            "src": "1322:124:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7650,
+              "nodeType": "StructuredDocumentation",
+              "src": "1452:81:14",
+              "text": " @dev Create a new bitmask by removing agreement class from it."
+            },
+            "functionSelector": "2765f6b7",
+            "id": 7659,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unmaskAgreementBit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7655,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7652,
+                  "mutability": "mutable",
+                  "name": "bitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7659,
+                  "src": "1566:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7651,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1566:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7654,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7659,
+                  "src": "1582:22:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7653,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1582:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1565:40:14"
+            },
+            "returnParameters": {
+              "id": 7658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7657,
+                  "mutability": "mutable",
+                  "name": "newBitmap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7659,
+                  "src": "1645:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7656,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1645:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1644:19:14"
+            },
+            "scope": 7660,
+            "src": "1538:126:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7661,
+        "src": "135:1532:14"
+      }
+    ],
+    "src": "32:1636:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.1+commit.f4a555be.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2020-09-28T17:04:34.262Z",
+  "devdoc": {
+    "author": "Superfluid",
+    "details": "Superfluid's Governance interface",
+    "kind": "dev",
+    "methods": {
+      "addAgreement(address)": {
+        "details": "Add an agreement to the whitelist"
+      },
+      "getLiquidationPeriod(address)": {
+        "details": "Get the Period that is allowed to perform a liquidation",
+        "params": {
+          "superToken": "Super token address."
+        }
+      },
+      "getRewardAddress(address)": {
+        "details": "Get the Reward address that receives the liquidation fees.",
+        "params": {
+          "superToken": "Super token address."
+        }
+      },
+      "isAgreementListed(address)": {
+        "details": "Check if the agreement is whitelisted"
+      },
+      "mapAgreements(uint256)": {
+        "details": "Map list of the agreements using a bitmap",
+        "params": {
+          "bitmap": "Agreement class ID based bitmap"
+        }
+      },
+      "maskAgreementBit(uint256,address)": {
+        "details": "Create a new bitmask by adding agreement class to it."
+      },
+      "unmaskAgreementBit(uint256,address)": {
+        "details": "Create a new bitmask by removing agreement class from it."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

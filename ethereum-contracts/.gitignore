@@ -15,7 +15,6 @@ yarn.lock
 
 # NOT PUBLIC YET
 /.github
-/build/contracts
 /maths
 /contracts/superfluid
 /contracts/agreements
