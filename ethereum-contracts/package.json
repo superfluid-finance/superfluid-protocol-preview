@@ -1,8 +1,7 @@
 {
   "name": "@superfluid-finance/ethereum-contracts",
-  "version": "0.1.0-latest",
+  "version": "0.1.0-preview-20200928",
   "description": " Ethereum contracts implementation for the Superfluid Protocol",
-  "repository": "github:superfluid-finance/ethereum-contracts",
   "license": "MIT",
   "main": "js-sdk/index.js",
   "files": [
@@ -54,8 +53,5 @@
     "hooks": {
       "pre-commit": "npm run lint"
     }
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
