@@ -1,4 +1,5 @@
 const SuperfluidSDK = require("../ethereum-contracts");
+const { wad4human } = require("@decentral.ee/web3-helpers");
 
 // To run the script"
 // - go to ethereum-contracts directory
@@ -39,25 +40,16 @@ module.exports = async function (callback) {
       await daix.upgrade(minAmount, { from: bob });
       console.log("Done minting and upgrading.");
     }
-    console.log(
-      "bob balance ",
-      (await daix.balanceOf(bob))
-    );
-    console.log(
-      "alice balance ",
-      (await daix.balanceOf(alice))
-    );
-    console.log(
-      "dan balance ",
-      (await daix.balanceOf(dan))
-    );
+    console.log("bob balance ", wad4human(await daix.balanceOf(bob)));
+    console.log("alice balance ", wad4human(await daix.balanceOf(alice)));
+    console.log("dan balance ", wad4human(await daix.balanceOf(dan)));
     console.log(
       "bob net flow",
       (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString()
     );
     console.log("Ready to interact with Superfluid!");
-    callback()
+    callback();
   } catch (err) {
-    callback(err)
+    callback(err);
   }
 };
