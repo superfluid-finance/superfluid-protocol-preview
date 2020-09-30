@@ -34,7 +34,7 @@ module.exports = async function (callback) {
         console.log("admin balance", (await daix.balanceOf(admin)).toString());
         console.log("bob balance", (await daix.balanceOf(bob)).toString());
 
-        if ((await sf.agreements.cfa.getFlow(daix.address, admin, bob)).timestamp) {
+        if ((await sf.agreements.cfa.getFlow(daix.address, admin, bob)).timestamp.toString() != "0") {
             console.log("Deleting the existing flow...");
             await sf.host.callAgreement(
                 sf.agreements.cfa.address,
