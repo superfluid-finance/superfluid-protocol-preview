@@ -17,7 +17,7 @@ async function main() {
   const minAmount = web3.utils.toWei("100", "ether");
   const sf = new SuperfluidSDK.Framework({
     chainId: 5,
-    version: "preview-20200928", // This is for using different protocol release
+    version: process.env.RELEASE_VERSION || "preview-20200928", // This is for using different protocol release
     web3Provider: web3Provider // your web3 provider
   });
   await sf.initialize();
@@ -41,7 +41,6 @@ async function main() {
   //console.log("admin balance", (await daix.balanceOf(admin)).toString());
   //console.log("bob balance", (await daix.balanceOf(bob)).toString());
 
-  /*
   console.log(
     "Admin net flow",
     (await sf.agreements.cfa.getNetFlow(daix.address, admin)).toString()
@@ -57,7 +56,8 @@ async function main() {
     admin,
     bob
   );
-  if (currentFlowData.timestamp.toString() != "0") {
+  const hasExistingFlow = currentFlowData.timestamp.toString() != "0";
+  if (hasExistingFlow && process.env.RESET_FLOW) {
     console.log("Deleting the existing flow...");
     await sf.host.callAgreement(
       sf.agreements.cfa.address,
@@ -69,36 +69,35 @@ async function main() {
       }
     );
     console.log("Flow deleted.");
+    console.log(
+      "Admin net flow: ",
+      (await sf.agreements.cfa.getNetFlow(daix.address, admin)).toString()
+    );
+    console.log(
+      "Bob net flow: ",
+      (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString()
+    );
   }
-  console.log(
-    "Admin net flow: ",
-    (await sf.agreements.cfa.getNetFlow(daix.address, admin)).toString()
-  );
-  console.log(
-    "Bob net flow: ",
-    (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString()
-  );
 
-  console.log("Creating a new flow...");
-  await sf.host.callAgreement(
-    sf.agreements.cfa.address,
-    sf.agreements.cfa.contract.methods
-      .createFlow(daix.address, bob, "385802469135802", "0x")
-      .encodeABI(),
-    {
-      from: admin
-    }
-  );
-  console.log("Flow created.");
-  console.log(
-  "Admin net flow: ",
-  (await sf.agreements.cfa.getNetFlow(daix.address, admin)).toString()
-);
-console.log(
-"Bob net flow: ",
-(await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString()
-);
-*/
+  if (!hasExistingFlow) {
+    console.log("Creating a new flow...");
+    await sf.host.callAgreement(
+      sf.agreements.cfa.address,
+      sf.agreements.cfa.contract.methods
+        .createFlow(daix.address, bob, "385802469135802", "0x")
+        .encodeABI(),
+      {
+        from: admin
+      }
+    );
+    console.log("Flow created.");
+    console.log("Admin net flow: ",
+      (await sf.agreements.cfa.getNetFlow(daix.address, admin)).toString()
+    );
+    console.log("Bob net flow: ",
+      (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString()
+    );
+  }
 
   // check net flow rates
   process.stdout.write("\nlive updating balance:\n");
