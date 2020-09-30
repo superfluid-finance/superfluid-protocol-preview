@@ -39,15 +39,15 @@
     "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/upgradability/Proxiable.sol",
     "exportedSymbols": {
       "Proxiable": [
-        11511
+        11732
       ]
     },
-    "id": 11512,
+    "id": 11733,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11465,
+        "id": 11686,
         "literals": [
           "solidity",
           "0.7",
@@ -59,10 +59,10 @@
       {
         "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/upgradability/ProxyUtils.sol",
         "file": "./ProxyUtils.sol",
-        "id": 11466,
+        "id": 11687,
         "nodeType": "ImportDirective",
-        "scope": 11512,
-        "sourceUnit": 11614,
+        "scope": 11733,
+        "sourceUnit": 11835,
         "src": "56:26:24",
         "symbolAliases": [],
         "unitAlias": ""
@@ -70,10 +70,10 @@
       {
         "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/upgradability/Proxy.sol",
         "file": "./Proxy.sol",
-        "id": 11467,
+        "id": 11688,
         "nodeType": "ImportDirective",
-        "scope": 11512,
-        "sourceUnit": 11581,
+        "scope": 11733,
+        "sourceUnit": 11802,
         "src": "83:21:24",
         "symbolAliases": [],
         "unitAlias": ""
@@ -84,22 +84,22 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 11468,
+          "id": 11689,
           "nodeType": "StructuredDocumentation",
           "src": "106:95:24",
           "text": " @dev Proxiable contract.\n      Inspired by https://eips.ethereum.org/EIPS/eip-1822"
         },
         "fullyImplemented": false,
-        "id": 11511,
+        "id": 11732,
         "linearizedBaseContracts": [
-          11511
+          11732
         ],
         "name": "Proxiable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 11478,
+              "id": 11699,
               "nodeType": "Block",
               "src": "375:51:24",
               "statements": [
@@ -109,32 +109,32 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 11474,
+                        "id": 11695,
                         "name": "ProxyUtils",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11613,
+                        "referencedDeclaration": 11834,
                         "src": "392:10:24",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11613_$",
+                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11834_$",
                           "typeString": "type(library ProxyUtils)"
                         }
                       },
-                      "id": 11475,
+                      "id": 11696,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "implementation",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11604,
+                      "referencedDeclaration": 11825,
                       "src": "392:25:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                         "typeString": "function () view returns (address)"
                       }
                     },
-                    "id": 11476,
+                    "id": 11697,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -149,43 +149,43 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 11473,
-                  "id": 11477,
+                  "functionReturnParameters": 11694,
+                  "id": 11698,
                   "nodeType": "Return",
                   "src": "385:34:24"
                 }
               ]
             },
             "documentation": {
-              "id": 11469,
+              "id": 11690,
               "nodeType": "StructuredDocumentation",
               "src": "237:64:24",
               "text": " @dev Get current implementation code address."
             },
             "functionSelector": "50d75d25",
-            "id": 11479,
+            "id": 11700,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCodeAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11470,
+              "id": 11691,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "329:2:24"
             },
             "returnParameters": {
-              "id": 11473,
+              "id": 11694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11472,
+                  "id": 11693,
                   "mutability": "mutable",
                   "name": "codeAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11479,
+                  "scope": 11700,
                   "src": "355:19:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -194,7 +194,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11471,
+                    "id": 11692,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "355:7:24",
@@ -209,7 +209,7 @@
               ],
               "src": "354:21:24"
             },
-            "scope": 11511,
+            "scope": 11732,
             "src": "306:120:24",
             "stateMutability": "view",
             "virtual": false,
@@ -217,35 +217,35 @@
           },
           {
             "documentation": {
-              "id": 11480,
+              "id": 11701,
               "nodeType": "StructuredDocumentation",
               "src": "432:139:24",
               "text": " @dev Proxiable UUID marker function.\n      This would help to avoid wrong logic contract to be used for upgrading."
             },
             "functionSelector": "52d1902d",
-            "id": 11485,
+            "id": 11706,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "proxiableUUID",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11481,
+              "id": 11702,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "598:2:24"
             },
             "returnParameters": {
-              "id": 11484,
+              "id": 11705,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11483,
+                  "id": 11704,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11485,
+                  "scope": 11706,
                   "src": "630:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -254,7 +254,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 11482,
+                    "id": 11703,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "630:7:24",
@@ -268,7 +268,7 @@
               ],
               "src": "629:9:24"
             },
-            "scope": 11511,
+            "scope": 11732,
             "src": "576:63:24",
             "stateMutability": "pure",
             "virtual": true,
@@ -276,7 +276,7 @@
           },
           {
             "body": {
-              "id": 11509,
+              "id": 11730,
               "nodeType": "Block",
               "src": "850:195:24",
               "statements": [
@@ -288,7 +288,7 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 11499,
+                        "id": 11720,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -297,18 +297,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 11492,
+                            "id": 11713,
                             "name": "proxiableUUID",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11485,
+                            "referencedDeclaration": 11706,
                             "src": "881:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$__$returns$_t_bytes32_$",
                               "typeString": "function () pure returns (bytes32)"
                             }
                           },
-                          "id": 11493,
+                          "id": 11714,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -332,11 +332,11 @@
                             "expression": {
                               "arguments": [
                                 {
-                                  "id": 11495,
+                                  "id": 11716,
                                   "name": "newAddress",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 11488,
+                                  "referencedDeclaration": 11709,
                                   "src": "910:10:24",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -351,18 +351,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 11494,
+                                "id": 11715,
                                 "name": "Proxiable",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11511,
+                                "referencedDeclaration": 11732,
                                 "src": "900:9:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_Proxiable_$11511_$",
+                                  "typeIdentifier": "t_type$_t_contract$_Proxiable_$11732_$",
                                   "typeString": "type(contract Proxiable)"
                                 }
                               },
-                              "id": 11496,
+                              "id": 11717,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -373,25 +373,25 @@
                               "src": "900:21:24",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Proxiable_$11511",
+                                "typeIdentifier": "t_contract$_Proxiable_$11732",
                                 "typeString": "contract Proxiable"
                               }
                             },
-                            "id": 11497,
+                            "id": 11718,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "proxiableUUID",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 11485,
+                            "referencedDeclaration": 11706,
                             "src": "900:35:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_pure$__$returns$_t_bytes32_$",
                               "typeString": "function () pure external returns (bytes32)"
                             }
                           },
-                          "id": 11498,
+                          "id": 11719,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -414,7 +414,7 @@
                       },
                       {
                         "hexValue": "50726f786961626c653a204e4f545f434f4d50415449424c45",
-                        "id": 11500,
+                        "id": 11721,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -440,7 +440,7 @@
                           "typeString": "literal_string \"Proxiable: NOT_COMPATIBLE\""
                         }
                       ],
-                      "id": 11491,
+                      "id": 11712,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -454,7 +454,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 11501,
+                    "id": 11722,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -469,7 +469,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 11502,
+                  "id": 11723,
                   "nodeType": "ExpressionStatement",
                   "src": "860:128:24"
                 },
@@ -477,11 +477,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 11506,
+                        "id": 11727,
                         "name": "newAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11488,
+                        "referencedDeclaration": 11709,
                         "src": "1027:10:24",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -497,32 +497,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 11503,
+                        "id": 11724,
                         "name": "ProxyUtils",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11613,
+                        "referencedDeclaration": 11834,
                         "src": "998:10:24",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11613_$",
+                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11834_$",
                           "typeString": "type(library ProxyUtils)"
                         }
                       },
-                      "id": 11505,
+                      "id": 11726,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "setImplementation",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11612,
+                      "referencedDeclaration": 11833,
                       "src": "998:28:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 11507,
+                    "id": 11728,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -537,35 +537,35 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 11508,
+                  "id": 11729,
                   "nodeType": "ExpressionStatement",
                   "src": "998:40:24"
                 }
               ]
             },
             "documentation": {
-              "id": 11486,
+              "id": 11707,
               "nodeType": "StructuredDocumentation",
               "src": "645:143:24",
               "text": " @dev Update code address function.\n      It is internal, so the derived contract could setup its own permission logic."
             },
-            "id": 11510,
+            "id": 11731,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_updateCodeAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11489,
+              "id": 11710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11488,
+                  "id": 11709,
                   "mutability": "mutable",
                   "name": "newAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11510,
+                  "scope": 11731,
                   "src": "821:18:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -574,7 +574,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11487,
+                    "id": 11708,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "821:7:24",
@@ -590,19 +590,19 @@
               "src": "820:20:24"
             },
             "returnParameters": {
-              "id": 11490,
+              "id": 11711,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "850:0:24"
             },
-            "scope": 11511,
+            "scope": 11732,
             "src": "793:252:24",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 11512,
+        "scope": 11733,
         "src": "202:846:24"
       }
     ],
@@ -612,15 +612,15 @@
     "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/upgradability/Proxiable.sol",
     "exportedSymbols": {
       "Proxiable": [
-        11511
+        11732
       ]
     },
-    "id": 11512,
+    "id": 11733,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11465,
+        "id": 11686,
         "literals": [
           "solidity",
           "0.7",
@@ -632,10 +632,10 @@
       {
         "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/upgradability/ProxyUtils.sol",
         "file": "./ProxyUtils.sol",
-        "id": 11466,
+        "id": 11687,
         "nodeType": "ImportDirective",
-        "scope": 11512,
-        "sourceUnit": 11614,
+        "scope": 11733,
+        "sourceUnit": 11835,
         "src": "56:26:24",
         "symbolAliases": [],
         "unitAlias": ""
@@ -643,10 +643,10 @@
       {
         "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/upgradability/Proxy.sol",
         "file": "./Proxy.sol",
-        "id": 11467,
+        "id": 11688,
         "nodeType": "ImportDirective",
-        "scope": 11512,
-        "sourceUnit": 11581,
+        "scope": 11733,
+        "sourceUnit": 11802,
         "src": "83:21:24",
         "symbolAliases": [],
         "unitAlias": ""
@@ -657,22 +657,22 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 11468,
+          "id": 11689,
           "nodeType": "StructuredDocumentation",
           "src": "106:95:24",
           "text": " @dev Proxiable contract.\n      Inspired by https://eips.ethereum.org/EIPS/eip-1822"
         },
         "fullyImplemented": false,
-        "id": 11511,
+        "id": 11732,
         "linearizedBaseContracts": [
-          11511
+          11732
         ],
         "name": "Proxiable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 11478,
+              "id": 11699,
               "nodeType": "Block",
               "src": "375:51:24",
               "statements": [
@@ -682,32 +682,32 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 11474,
+                        "id": 11695,
                         "name": "ProxyUtils",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11613,
+                        "referencedDeclaration": 11834,
                         "src": "392:10:24",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11613_$",
+                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11834_$",
                           "typeString": "type(library ProxyUtils)"
                         }
                       },
-                      "id": 11475,
+                      "id": 11696,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "implementation",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11604,
+                      "referencedDeclaration": 11825,
                       "src": "392:25:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                         "typeString": "function () view returns (address)"
                       }
                     },
-                    "id": 11476,
+                    "id": 11697,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -722,43 +722,43 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 11473,
-                  "id": 11477,
+                  "functionReturnParameters": 11694,
+                  "id": 11698,
                   "nodeType": "Return",
                   "src": "385:34:24"
                 }
               ]
             },
             "documentation": {
-              "id": 11469,
+              "id": 11690,
               "nodeType": "StructuredDocumentation",
               "src": "237:64:24",
               "text": " @dev Get current implementation code address."
             },
             "functionSelector": "50d75d25",
-            "id": 11479,
+            "id": 11700,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCodeAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11470,
+              "id": 11691,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "329:2:24"
             },
             "returnParameters": {
-              "id": 11473,
+              "id": 11694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11472,
+                  "id": 11693,
                   "mutability": "mutable",
                   "name": "codeAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11479,
+                  "scope": 11700,
                   "src": "355:19:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -767,7 +767,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11471,
+                    "id": 11692,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "355:7:24",
@@ -782,7 +782,7 @@
               ],
               "src": "354:21:24"
             },
-            "scope": 11511,
+            "scope": 11732,
             "src": "306:120:24",
             "stateMutability": "view",
             "virtual": false,
@@ -790,35 +790,35 @@
           },
           {
             "documentation": {
-              "id": 11480,
+              "id": 11701,
               "nodeType": "StructuredDocumentation",
               "src": "432:139:24",
               "text": " @dev Proxiable UUID marker function.\n      This would help to avoid wrong logic contract to be used for upgrading."
             },
             "functionSelector": "52d1902d",
-            "id": 11485,
+            "id": 11706,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "proxiableUUID",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11481,
+              "id": 11702,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "598:2:24"
             },
             "returnParameters": {
-              "id": 11484,
+              "id": 11705,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11483,
+                  "id": 11704,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11485,
+                  "scope": 11706,
                   "src": "630:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -827,7 +827,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 11482,
+                    "id": 11703,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "630:7:24",
@@ -841,7 +841,7 @@
               ],
               "src": "629:9:24"
             },
-            "scope": 11511,
+            "scope": 11732,
             "src": "576:63:24",
             "stateMutability": "pure",
             "virtual": true,
@@ -849,7 +849,7 @@
           },
           {
             "body": {
-              "id": 11509,
+              "id": 11730,
               "nodeType": "Block",
               "src": "850:195:24",
               "statements": [
@@ -861,7 +861,7 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 11499,
+                        "id": 11720,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -870,18 +870,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 11492,
+                            "id": 11713,
                             "name": "proxiableUUID",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11485,
+                            "referencedDeclaration": 11706,
                             "src": "881:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$__$returns$_t_bytes32_$",
                               "typeString": "function () pure returns (bytes32)"
                             }
                           },
-                          "id": 11493,
+                          "id": 11714,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -905,11 +905,11 @@
                             "expression": {
                               "arguments": [
                                 {
-                                  "id": 11495,
+                                  "id": 11716,
                                   "name": "newAddress",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 11488,
+                                  "referencedDeclaration": 11709,
                                   "src": "910:10:24",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -924,18 +924,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 11494,
+                                "id": 11715,
                                 "name": "Proxiable",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11511,
+                                "referencedDeclaration": 11732,
                                 "src": "900:9:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_Proxiable_$11511_$",
+                                  "typeIdentifier": "t_type$_t_contract$_Proxiable_$11732_$",
                                   "typeString": "type(contract Proxiable)"
                                 }
                               },
-                              "id": 11496,
+                              "id": 11717,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -946,25 +946,25 @@
                               "src": "900:21:24",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Proxiable_$11511",
+                                "typeIdentifier": "t_contract$_Proxiable_$11732",
                                 "typeString": "contract Proxiable"
                               }
                             },
-                            "id": 11497,
+                            "id": 11718,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "proxiableUUID",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 11485,
+                            "referencedDeclaration": 11706,
                             "src": "900:35:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_pure$__$returns$_t_bytes32_$",
                               "typeString": "function () pure external returns (bytes32)"
                             }
                           },
-                          "id": 11498,
+                          "id": 11719,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -987,7 +987,7 @@
                       },
                       {
                         "hexValue": "50726f786961626c653a204e4f545f434f4d50415449424c45",
-                        "id": 11500,
+                        "id": 11721,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1013,7 +1013,7 @@
                           "typeString": "literal_string \"Proxiable: NOT_COMPATIBLE\""
                         }
                       ],
-                      "id": 11491,
+                      "id": 11712,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1027,7 +1027,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 11501,
+                    "id": 11722,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1042,7 +1042,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 11502,
+                  "id": 11723,
                   "nodeType": "ExpressionStatement",
                   "src": "860:128:24"
                 },
@@ -1050,11 +1050,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 11506,
+                        "id": 11727,
                         "name": "newAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11488,
+                        "referencedDeclaration": 11709,
                         "src": "1027:10:24",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1070,32 +1070,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 11503,
+                        "id": 11724,
                         "name": "ProxyUtils",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 11613,
+                        "referencedDeclaration": 11834,
                         "src": "998:10:24",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11613_$",
+                          "typeIdentifier": "t_type$_t_contract$_ProxyUtils_$11834_$",
                           "typeString": "type(library ProxyUtils)"
                         }
                       },
-                      "id": 11505,
+                      "id": 11726,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "setImplementation",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11612,
+                      "referencedDeclaration": 11833,
                       "src": "998:28:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 11507,
+                    "id": 11728,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1110,35 +1110,35 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 11508,
+                  "id": 11729,
                   "nodeType": "ExpressionStatement",
                   "src": "998:40:24"
                 }
               ]
             },
             "documentation": {
-              "id": 11486,
+              "id": 11707,
               "nodeType": "StructuredDocumentation",
               "src": "645:143:24",
               "text": " @dev Update code address function.\n      It is internal, so the derived contract could setup its own permission logic."
             },
-            "id": 11510,
+            "id": 11731,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_updateCodeAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11489,
+              "id": 11710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11488,
+                  "id": 11709,
                   "mutability": "mutable",
                   "name": "newAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11510,
+                  "scope": 11731,
                   "src": "821:18:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1147,7 +1147,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11487,
+                    "id": 11708,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "821:7:24",
@@ -1163,19 +1163,19 @@
               "src": "820:20:24"
             },
             "returnParameters": {
-              "id": 11490,
+              "id": 11711,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "850:0:24"
             },
-            "scope": 11511,
+            "scope": 11732,
             "src": "793:252:24",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 11512,
+        "scope": 11733,
         "src": "202:846:24"
       }
     ],
@@ -1187,7 +1187,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-28T17:04:34.345Z",
+  "updatedAt": "2020-09-30T18:18:27.110Z",
   "devdoc": {
     "details": "Proxiable contract.      Inspired by https://eips.ethereum.org/EIPS/eip-1822",
     "kind": "dev",

@@ -150,15 +150,15 @@
     "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
     "exportedSymbols": {
       "ISuperfluidGovernance": [
-        7660
+        7818
       ]
     },
-    "id": 7661,
+    "id": 7819,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7599,
+        "id": 7757,
         "literals": [
           "solidity",
           ">=",
@@ -174,44 +174,44 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 7600,
+          "id": 7758,
           "nodeType": "StructuredDocumentation",
           "src": "60:74:14",
           "text": " @dev Superfluid's Governance interface\n @author Superfluid"
         },
         "fullyImplemented": false,
-        "id": 7660,
+        "id": 7818,
         "linearizedBaseContracts": [
-          7660
+          7818
         ],
         "name": "ISuperfluidGovernance",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 7601,
+              "id": 7759,
               "nodeType": "StructuredDocumentation",
               "src": "174:128:14",
               "text": " @dev Get the Reward address that receives the liquidation fees.\n @param superToken Super token address."
             },
             "functionSelector": "0e327ee8",
-            "id": 7608,
+            "id": 7766,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRewardAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7604,
+              "id": 7762,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7603,
+                  "id": 7761,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7608,
+                  "scope": 7766,
                   "src": "342:18:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -220,7 +220,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7602,
+                    "id": 7760,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "342:7:14",
@@ -236,16 +236,16 @@
               "src": "332:34:14"
             },
             "returnParameters": {
-              "id": 7607,
+              "id": 7765,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7606,
+                  "id": 7764,
                   "mutability": "mutable",
                   "name": "rewardAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7608,
+                  "scope": 7766,
                   "src": "413:21:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -254,7 +254,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7605,
+                    "id": 7763,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "413:7:14",
@@ -269,7 +269,7 @@
               ],
               "src": "412:23:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "307:129:14",
             "stateMutability": "view",
             "virtual": false,
@@ -277,29 +277,29 @@
           },
           {
             "documentation": {
-              "id": 7609,
+              "id": 7767,
               "nodeType": "StructuredDocumentation",
               "src": "442:125:14",
               "text": " @dev Get the Period that is allowed to perform a liquidation\n @param superToken Super token address."
             },
             "functionSelector": "bf9149f2",
-            "id": 7616,
+            "id": 7774,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getLiquidationPeriod",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7612,
+              "id": 7770,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7611,
+                  "id": 7769,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7616,
+                  "scope": 7774,
                   "src": "611:18:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -308,7 +308,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7610,
+                    "id": 7768,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "611:7:14",
@@ -324,16 +324,16 @@
               "src": "601:34:14"
             },
             "returnParameters": {
-              "id": 7615,
+              "id": 7773,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7614,
+                  "id": 7772,
                   "mutability": "mutable",
                   "name": "period",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7616,
+                  "scope": 7774,
                   "src": "682:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -342,7 +342,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7613,
+                    "id": 7771,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "682:7:14",
@@ -356,7 +356,7 @@
               ],
               "src": "681:16:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "572:126:14",
             "stateMutability": "view",
             "virtual": false,
@@ -364,29 +364,29 @@
           },
           {
             "documentation": {
-              "id": 7617,
+              "id": 7775,
               "nodeType": "StructuredDocumentation",
               "src": "704:57:14",
               "text": " @dev Add an agreement to the whitelist"
             },
             "functionSelector": "09fa423e",
-            "id": 7622,
+            "id": 7780,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addAgreement",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7620,
+              "id": 7778,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7619,
+                  "id": 7777,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7622,
+                  "scope": 7780,
                   "src": "788:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -395,7 +395,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7618,
+                    "id": 7776,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "788:7:14",
@@ -411,12 +411,12 @@
               "src": "787:24:14"
             },
             "returnParameters": {
-              "id": 7621,
+              "id": 7779,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "820:0:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "766:55:14",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -424,29 +424,29 @@
           },
           {
             "documentation": {
-              "id": 7623,
+              "id": 7781,
               "nodeType": "StructuredDocumentation",
               "src": "827:61:14",
               "text": " @dev Check if the agreement is whitelisted"
             },
             "functionSelector": "f9029be5",
-            "id": 7630,
+            "id": 7788,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "isAgreementListed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7626,
+              "id": 7784,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7625,
+                  "id": 7783,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7630,
+                  "scope": 7788,
                   "src": "920:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -455,7 +455,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7624,
+                    "id": 7782,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "920:7:14",
@@ -471,16 +471,16 @@
               "src": "919:24:14"
             },
             "returnParameters": {
-              "id": 7629,
+              "id": 7787,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7628,
+                  "id": 7786,
                   "mutability": "mutable",
                   "name": "yes",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7630,
+                  "scope": 7788,
                   "src": "982:8:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -489,7 +489,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 7627,
+                    "id": 7785,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "982:4:14",
@@ -503,7 +503,7 @@
               ],
               "src": "981:10:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "893:99:14",
             "stateMutability": "view",
             "virtual": false,
@@ -511,29 +511,29 @@
           },
           {
             "documentation": {
-              "id": 7631,
+              "id": 7789,
               "nodeType": "StructuredDocumentation",
               "src": "998:118:14",
               "text": " @dev Map list of the agreements using a bitmap\n @param bitmap Agreement class ID based bitmap"
             },
             "functionSelector": "bebb6f2f",
-            "id": 7639,
+            "id": 7797,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "mapAgreements",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7634,
+              "id": 7792,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7633,
+                  "id": 7791,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7639,
+                  "scope": 7797,
                   "src": "1144:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -542,7 +542,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7632,
+                    "id": 7790,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1144:7:14",
@@ -557,16 +557,16 @@
               "src": "1143:16:14"
             },
             "returnParameters": {
-              "id": 7638,
+              "id": 7796,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7637,
+                  "id": 7795,
                   "mutability": "mutable",
                   "name": "agreementClasses",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7639,
+                  "scope": 7797,
                   "src": "1199:33:14",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -576,7 +576,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 7635,
+                      "id": 7793,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "1199:7:14",
@@ -586,7 +586,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 7636,
+                    "id": 7794,
                     "nodeType": "ArrayTypeName",
                     "src": "1199:9:14",
                     "typeDescriptions": {
@@ -599,7 +599,7 @@
               ],
               "src": "1198:35:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "1121:113:14",
             "stateMutability": "view",
             "virtual": false,
@@ -607,29 +607,29 @@
           },
           {
             "documentation": {
-              "id": 7640,
+              "id": 7798,
               "nodeType": "StructuredDocumentation",
               "src": "1240:77:14",
               "text": " @dev Create a new bitmask by adding agreement class to it."
             },
             "functionSelector": "2444d97e",
-            "id": 7649,
+            "id": 7807,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "maskAgreementBit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7645,
+              "id": 7803,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7642,
+                  "id": 7800,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7649,
+                  "scope": 7807,
                   "src": "1348:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -638,7 +638,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7641,
+                    "id": 7799,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1348:7:14",
@@ -651,11 +651,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7644,
+                  "id": 7802,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7649,
+                  "scope": 7807,
                   "src": "1364:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -664,7 +664,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7643,
+                    "id": 7801,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:7:14",
@@ -680,16 +680,16 @@
               "src": "1347:40:14"
             },
             "returnParameters": {
-              "id": 7648,
+              "id": 7806,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7647,
+                  "id": 7805,
                   "mutability": "mutable",
                   "name": "newBitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7649,
+                  "scope": 7807,
                   "src": "1427:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -698,7 +698,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7646,
+                    "id": 7804,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1427:7:14",
@@ -712,7 +712,7 @@
               ],
               "src": "1426:19:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "1322:124:14",
             "stateMutability": "view",
             "virtual": false,
@@ -720,29 +720,29 @@
           },
           {
             "documentation": {
-              "id": 7650,
+              "id": 7808,
               "nodeType": "StructuredDocumentation",
               "src": "1452:81:14",
               "text": " @dev Create a new bitmask by removing agreement class from it."
             },
             "functionSelector": "2765f6b7",
-            "id": 7659,
+            "id": 7817,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "unmaskAgreementBit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7655,
+              "id": 7813,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7652,
+                  "id": 7810,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7659,
+                  "scope": 7817,
                   "src": "1566:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -751,7 +751,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7651,
+                    "id": 7809,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1566:7:14",
@@ -764,11 +764,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7654,
+                  "id": 7812,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7659,
+                  "scope": 7817,
                   "src": "1582:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -777,7 +777,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7653,
+                    "id": 7811,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1582:7:14",
@@ -793,16 +793,16 @@
               "src": "1565:40:14"
             },
             "returnParameters": {
-              "id": 7658,
+              "id": 7816,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7657,
+                  "id": 7815,
                   "mutability": "mutable",
                   "name": "newBitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7659,
+                  "scope": 7817,
                   "src": "1645:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -811,7 +811,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7656,
+                    "id": 7814,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1645:7:14",
@@ -825,14 +825,14 @@
               ],
               "src": "1644:19:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "1538:126:14",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 7661,
+        "scope": 7819,
         "src": "135:1532:14"
       }
     ],
@@ -842,15 +842,15 @@
     "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
     "exportedSymbols": {
       "ISuperfluidGovernance": [
-        7660
+        7818
       ]
     },
-    "id": 7661,
+    "id": 7819,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7599,
+        "id": 7757,
         "literals": [
           "solidity",
           ">=",
@@ -866,44 +866,44 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 7600,
+          "id": 7758,
           "nodeType": "StructuredDocumentation",
           "src": "60:74:14",
           "text": " @dev Superfluid's Governance interface\n @author Superfluid"
         },
         "fullyImplemented": false,
-        "id": 7660,
+        "id": 7818,
         "linearizedBaseContracts": [
-          7660
+          7818
         ],
         "name": "ISuperfluidGovernance",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 7601,
+              "id": 7759,
               "nodeType": "StructuredDocumentation",
               "src": "174:128:14",
               "text": " @dev Get the Reward address that receives the liquidation fees.\n @param superToken Super token address."
             },
             "functionSelector": "0e327ee8",
-            "id": 7608,
+            "id": 7766,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRewardAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7604,
+              "id": 7762,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7603,
+                  "id": 7761,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7608,
+                  "scope": 7766,
                   "src": "342:18:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -912,7 +912,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7602,
+                    "id": 7760,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "342:7:14",
@@ -928,16 +928,16 @@
               "src": "332:34:14"
             },
             "returnParameters": {
-              "id": 7607,
+              "id": 7765,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7606,
+                  "id": 7764,
                   "mutability": "mutable",
                   "name": "rewardAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7608,
+                  "scope": 7766,
                   "src": "413:21:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -946,7 +946,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7605,
+                    "id": 7763,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "413:7:14",
@@ -961,7 +961,7 @@
               ],
               "src": "412:23:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "307:129:14",
             "stateMutability": "view",
             "virtual": false,
@@ -969,29 +969,29 @@
           },
           {
             "documentation": {
-              "id": 7609,
+              "id": 7767,
               "nodeType": "StructuredDocumentation",
               "src": "442:125:14",
               "text": " @dev Get the Period that is allowed to perform a liquidation\n @param superToken Super token address."
             },
             "functionSelector": "bf9149f2",
-            "id": 7616,
+            "id": 7774,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getLiquidationPeriod",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7612,
+              "id": 7770,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7611,
+                  "id": 7769,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7616,
+                  "scope": 7774,
                   "src": "611:18:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1000,7 +1000,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7610,
+                    "id": 7768,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "611:7:14",
@@ -1016,16 +1016,16 @@
               "src": "601:34:14"
             },
             "returnParameters": {
-              "id": 7615,
+              "id": 7773,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7614,
+                  "id": 7772,
                   "mutability": "mutable",
                   "name": "period",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7616,
+                  "scope": 7774,
                   "src": "682:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1034,7 +1034,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7613,
+                    "id": 7771,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "682:7:14",
@@ -1048,7 +1048,7 @@
               ],
               "src": "681:16:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "572:126:14",
             "stateMutability": "view",
             "virtual": false,
@@ -1056,29 +1056,29 @@
           },
           {
             "documentation": {
-              "id": 7617,
+              "id": 7775,
               "nodeType": "StructuredDocumentation",
               "src": "704:57:14",
               "text": " @dev Add an agreement to the whitelist"
             },
             "functionSelector": "09fa423e",
-            "id": 7622,
+            "id": 7780,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addAgreement",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7620,
+              "id": 7778,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7619,
+                  "id": 7777,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7622,
+                  "scope": 7780,
                   "src": "788:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1087,7 +1087,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7618,
+                    "id": 7776,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "788:7:14",
@@ -1103,12 +1103,12 @@
               "src": "787:24:14"
             },
             "returnParameters": {
-              "id": 7621,
+              "id": 7779,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "820:0:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "766:55:14",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1116,29 +1116,29 @@
           },
           {
             "documentation": {
-              "id": 7623,
+              "id": 7781,
               "nodeType": "StructuredDocumentation",
               "src": "827:61:14",
               "text": " @dev Check if the agreement is whitelisted"
             },
             "functionSelector": "f9029be5",
-            "id": 7630,
+            "id": 7788,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "isAgreementListed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7626,
+              "id": 7784,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7625,
+                  "id": 7783,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7630,
+                  "scope": 7788,
                   "src": "920:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1147,7 +1147,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7624,
+                    "id": 7782,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "920:7:14",
@@ -1163,16 +1163,16 @@
               "src": "919:24:14"
             },
             "returnParameters": {
-              "id": 7629,
+              "id": 7787,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7628,
+                  "id": 7786,
                   "mutability": "mutable",
                   "name": "yes",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7630,
+                  "scope": 7788,
                   "src": "982:8:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1181,7 +1181,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 7627,
+                    "id": 7785,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "982:4:14",
@@ -1195,7 +1195,7 @@
               ],
               "src": "981:10:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "893:99:14",
             "stateMutability": "view",
             "virtual": false,
@@ -1203,29 +1203,29 @@
           },
           {
             "documentation": {
-              "id": 7631,
+              "id": 7789,
               "nodeType": "StructuredDocumentation",
               "src": "998:118:14",
               "text": " @dev Map list of the agreements using a bitmap\n @param bitmap Agreement class ID based bitmap"
             },
             "functionSelector": "bebb6f2f",
-            "id": 7639,
+            "id": 7797,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "mapAgreements",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7634,
+              "id": 7792,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7633,
+                  "id": 7791,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7639,
+                  "scope": 7797,
                   "src": "1144:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1234,7 +1234,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7632,
+                    "id": 7790,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1144:7:14",
@@ -1249,16 +1249,16 @@
               "src": "1143:16:14"
             },
             "returnParameters": {
-              "id": 7638,
+              "id": 7796,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7637,
+                  "id": 7795,
                   "mutability": "mutable",
                   "name": "agreementClasses",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7639,
+                  "scope": 7797,
                   "src": "1199:33:14",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1268,7 +1268,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 7635,
+                      "id": 7793,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "1199:7:14",
@@ -1278,7 +1278,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 7636,
+                    "id": 7794,
                     "nodeType": "ArrayTypeName",
                     "src": "1199:9:14",
                     "typeDescriptions": {
@@ -1291,7 +1291,7 @@
               ],
               "src": "1198:35:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "1121:113:14",
             "stateMutability": "view",
             "virtual": false,
@@ -1299,29 +1299,29 @@
           },
           {
             "documentation": {
-              "id": 7640,
+              "id": 7798,
               "nodeType": "StructuredDocumentation",
               "src": "1240:77:14",
               "text": " @dev Create a new bitmask by adding agreement class to it."
             },
             "functionSelector": "2444d97e",
-            "id": 7649,
+            "id": 7807,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "maskAgreementBit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7645,
+              "id": 7803,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7642,
+                  "id": 7800,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7649,
+                  "scope": 7807,
                   "src": "1348:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1330,7 +1330,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7641,
+                    "id": 7799,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1348:7:14",
@@ -1343,11 +1343,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7644,
+                  "id": 7802,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7649,
+                  "scope": 7807,
                   "src": "1364:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1356,7 +1356,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7643,
+                    "id": 7801,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:7:14",
@@ -1372,16 +1372,16 @@
               "src": "1347:40:14"
             },
             "returnParameters": {
-              "id": 7648,
+              "id": 7806,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7647,
+                  "id": 7805,
                   "mutability": "mutable",
                   "name": "newBitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7649,
+                  "scope": 7807,
                   "src": "1427:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1390,7 +1390,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7646,
+                    "id": 7804,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1427:7:14",
@@ -1404,7 +1404,7 @@
               ],
               "src": "1426:19:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "1322:124:14",
             "stateMutability": "view",
             "virtual": false,
@@ -1412,29 +1412,29 @@
           },
           {
             "documentation": {
-              "id": 7650,
+              "id": 7808,
               "nodeType": "StructuredDocumentation",
               "src": "1452:81:14",
               "text": " @dev Create a new bitmask by removing agreement class from it."
             },
             "functionSelector": "2765f6b7",
-            "id": 7659,
+            "id": 7817,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "unmaskAgreementBit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7655,
+              "id": 7813,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7652,
+                  "id": 7810,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7659,
+                  "scope": 7817,
                   "src": "1566:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1443,7 +1443,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7651,
+                    "id": 7809,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1566:7:14",
@@ -1456,11 +1456,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7654,
+                  "id": 7812,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7659,
+                  "scope": 7817,
                   "src": "1582:22:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1469,7 +1469,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7653,
+                    "id": 7811,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1582:7:14",
@@ -1485,16 +1485,16 @@
               "src": "1565:40:14"
             },
             "returnParameters": {
-              "id": 7658,
+              "id": 7816,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7657,
+                  "id": 7815,
                   "mutability": "mutable",
                   "name": "newBitmap",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7659,
+                  "scope": 7817,
                   "src": "1645:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1503,7 +1503,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7656,
+                    "id": 7814,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1645:7:14",
@@ -1517,14 +1517,14 @@
               ],
               "src": "1644:19:14"
             },
-            "scope": 7660,
+            "scope": 7818,
             "src": "1538:126:14",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 7661,
+        "scope": 7819,
         "src": "135:1532:14"
       }
     ],
@@ -1536,7 +1536,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-28T17:04:34.262Z",
+  "updatedAt": "2020-09-30T18:18:27.042Z",
   "devdoc": {
     "author": "Superfluid",
     "details": "Superfluid's Governance interface",

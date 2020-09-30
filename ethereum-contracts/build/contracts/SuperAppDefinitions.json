@@ -130,15 +130,15 @@
     "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/SuperAppDefinitions.sol",
     "exportedSymbols": {
       "SuperAppDefinitions": [
-        7727
+        7885
       ]
     },
-    "id": 7728,
+    "id": 7886,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7662,
+        "id": 7820,
         "literals": [
           "solidity",
           ">=",
@@ -154,15 +154,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 7663,
+          "id": 7821,
           "nodeType": "StructuredDocumentation",
           "src": "59:45:15",
           "text": " @dev Super app definitions library"
         },
         "fullyImplemented": true,
-        "id": 7727,
+        "id": 7885,
         "linearizedBaseContracts": [
-          7727
+          7885
         ],
         "name": "SuperAppDefinitions",
         "nodeType": "ContractDefinition",
@@ -170,11 +170,11 @@
           {
             "constant": true,
             "functionSelector": "46062cc9",
-            "id": 7668,
+            "id": 7826,
             "mutability": "constant",
             "name": "TYPE_APP_FINAL",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "186:44:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -183,7 +183,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7664,
+              "id": 7822,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "186:4:15",
@@ -197,14 +197,14 @@
                 "typeIdentifier": "t_rational_1_by_1",
                 "typeString": "int_const 1"
               },
-              "id": 7667,
+              "id": 7825,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7665,
+                "id": 7823,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -222,7 +222,7 @@
               "operator": "<<",
               "rightExpression": {
                 "hexValue": "30",
-                "id": 7666,
+                "id": 7824,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -247,11 +247,11 @@
           {
             "constant": true,
             "functionSelector": "9ac3237d",
-            "id": 7673,
+            "id": 7831,
             "mutability": "constant",
             "name": "TYPE_APP_SECOND",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "236:45:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -260,7 +260,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7669,
+              "id": 7827,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "236:4:15",
@@ -274,14 +274,14 @@
                 "typeIdentifier": "t_rational_2_by_1",
                 "typeString": "int_const 2"
               },
-              "id": 7672,
+              "id": 7830,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7670,
+                "id": 7828,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -299,7 +299,7 @@
               "operator": "<<",
               "rightExpression": {
                 "hexValue": "31",
-                "id": 7671,
+                "id": 7829,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -324,11 +324,11 @@
           {
             "constant": true,
             "functionSelector": "c23ddadc",
-            "id": 7678,
+            "id": 7836,
             "mutability": "constant",
             "name": "JAIL",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "287:35:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -337,7 +337,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7674,
+              "id": 7832,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "287:4:15",
@@ -351,14 +351,14 @@
                 "typeIdentifier": "t_rational_32768_by_1",
                 "typeString": "int_const 32768"
               },
-              "id": 7677,
+              "id": 7835,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7675,
+                "id": 7833,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -376,7 +376,7 @@
               "operator": "<<",
               "rightExpression": {
                 "hexValue": "3135",
-                "id": 7676,
+                "id": 7834,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -401,11 +401,11 @@
           {
             "constant": true,
             "functionSelector": "5c510c46",
-            "id": 7686,
+            "id": 7844,
             "mutability": "constant",
             "name": "BEFORE_AGREEMENT_CREATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "384:66:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -414,7 +414,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7679,
+              "id": 7837,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "384:4:15",
@@ -428,14 +428,14 @@
                 "typeIdentifier": "t_rational_4294967296_by_1",
                 "typeString": "int_const 4294967296"
               },
-              "id": 7685,
+              "id": 7843,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7680,
+                "id": 7838,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -458,14 +458,14 @@
                       "typeIdentifier": "t_rational_32_by_1",
                       "typeString": "int_const 32"
                     },
-                    "id": 7683,
+                    "id": 7841,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7681,
+                      "id": 7839,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -483,7 +483,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 7682,
+                      "id": 7840,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -504,7 +504,7 @@
                     }
                   }
                 ],
-                "id": 7684,
+                "id": 7842,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -528,11 +528,11 @@
           {
             "constant": true,
             "functionSelector": "b732da18",
-            "id": 7694,
+            "id": 7852,
             "mutability": "constant",
             "name": "AFTER_AGREEMENT_CREATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "456:65:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -541,7 +541,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7687,
+              "id": 7845,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "456:4:15",
@@ -555,14 +555,14 @@
                 "typeIdentifier": "t_rational_8589934592_by_1",
                 "typeString": "int_const 8589934592"
               },
-              "id": 7693,
+              "id": 7851,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7688,
+                "id": 7846,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -585,14 +585,14 @@
                       "typeIdentifier": "t_rational_33_by_1",
                       "typeString": "int_const 33"
                     },
-                    "id": 7691,
+                    "id": 7849,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7689,
+                      "id": 7847,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -610,7 +610,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "31",
-                      "id": 7690,
+                      "id": 7848,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -631,7 +631,7 @@
                     }
                   }
                 ],
-                "id": 7692,
+                "id": 7850,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -655,11 +655,11 @@
           {
             "constant": true,
             "functionSelector": "796795c3",
-            "id": 7702,
+            "id": 7860,
             "mutability": "constant",
             "name": "BEFORE_AGREEMENT_UPDATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "527:66:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -668,7 +668,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7695,
+              "id": 7853,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "527:4:15",
@@ -682,14 +682,14 @@
                 "typeIdentifier": "t_rational_17179869184_by_1",
                 "typeString": "int_const 17179869184"
               },
-              "id": 7701,
+              "id": 7859,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7696,
+                "id": 7854,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -712,14 +712,14 @@
                       "typeIdentifier": "t_rational_34_by_1",
                       "typeString": "int_const 34"
                     },
-                    "id": 7699,
+                    "id": 7857,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7697,
+                      "id": 7855,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -737,7 +737,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "32",
-                      "id": 7698,
+                      "id": 7856,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -758,7 +758,7 @@
                     }
                   }
                 ],
-                "id": 7700,
+                "id": 7858,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -782,11 +782,11 @@
           {
             "constant": true,
             "functionSelector": "6ecccafe",
-            "id": 7710,
+            "id": 7868,
             "mutability": "constant",
             "name": "AFTER_AGREEMENT_UPDATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "599:65:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -795,7 +795,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7703,
+              "id": 7861,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "599:4:15",
@@ -809,14 +809,14 @@
                 "typeIdentifier": "t_rational_34359738368_by_1",
                 "typeString": "int_const 34359738368"
               },
-              "id": 7709,
+              "id": 7867,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7704,
+                "id": 7862,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -839,14 +839,14 @@
                       "typeIdentifier": "t_rational_35_by_1",
                       "typeString": "int_const 35"
                     },
-                    "id": 7707,
+                    "id": 7865,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7705,
+                      "id": 7863,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -864,7 +864,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "33",
-                      "id": 7706,
+                      "id": 7864,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -885,7 +885,7 @@
                     }
                   }
                 ],
-                "id": 7708,
+                "id": 7866,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -909,11 +909,11 @@
           {
             "constant": true,
             "functionSelector": "596ef58d",
-            "id": 7718,
+            "id": 7876,
             "mutability": "constant",
             "name": "BEFORE_AGREEMENT_TERMINATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "670:69:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -922,7 +922,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7711,
+              "id": 7869,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "670:4:15",
@@ -936,14 +936,14 @@
                 "typeIdentifier": "t_rational_68719476736_by_1",
                 "typeString": "int_const 68719476736"
               },
-              "id": 7717,
+              "id": 7875,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7712,
+                "id": 7870,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -966,14 +966,14 @@
                       "typeIdentifier": "t_rational_36_by_1",
                       "typeString": "int_const 36"
                     },
-                    "id": 7715,
+                    "id": 7873,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7713,
+                      "id": 7871,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -991,7 +991,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "34",
-                      "id": 7714,
+                      "id": 7872,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1012,7 +1012,7 @@
                     }
                   }
                 ],
-                "id": 7716,
+                "id": 7874,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -1036,11 +1036,11 @@
           {
             "constant": true,
             "functionSelector": "c8e63d13",
-            "id": 7726,
+            "id": 7884,
             "mutability": "constant",
             "name": "AFTER_AGREEMENT_TERMINATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "745:68:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1049,7 +1049,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7719,
+              "id": 7877,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "745:4:15",
@@ -1063,14 +1063,14 @@
                 "typeIdentifier": "t_rational_137438953472_by_1",
                 "typeString": "int_const 137438953472"
               },
-              "id": 7725,
+              "id": 7883,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7720,
+                "id": 7878,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1093,14 +1093,14 @@
                       "typeIdentifier": "t_rational_37_by_1",
                       "typeString": "int_const 37"
                     },
-                    "id": 7723,
+                    "id": 7881,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7721,
+                      "id": 7879,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1118,7 +1118,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "35",
-                      "id": 7722,
+                      "id": 7880,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1139,7 +1139,7 @@
                     }
                   }
                 ],
-                "id": 7724,
+                "id": 7882,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -1161,7 +1161,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 7728,
+        "scope": 7886,
         "src": "105:712:15"
       }
     ],
@@ -1171,15 +1171,15 @@
     "absolutePath": "/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/SuperAppDefinitions.sol",
     "exportedSymbols": {
       "SuperAppDefinitions": [
-        7727
+        7885
       ]
     },
-    "id": 7728,
+    "id": 7886,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7662,
+        "id": 7820,
         "literals": [
           "solidity",
           ">=",
@@ -1195,15 +1195,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 7663,
+          "id": 7821,
           "nodeType": "StructuredDocumentation",
           "src": "59:45:15",
           "text": " @dev Super app definitions library"
         },
         "fullyImplemented": true,
-        "id": 7727,
+        "id": 7885,
         "linearizedBaseContracts": [
-          7727
+          7885
         ],
         "name": "SuperAppDefinitions",
         "nodeType": "ContractDefinition",
@@ -1211,11 +1211,11 @@
           {
             "constant": true,
             "functionSelector": "46062cc9",
-            "id": 7668,
+            "id": 7826,
             "mutability": "constant",
             "name": "TYPE_APP_FINAL",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "186:44:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1224,7 +1224,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7664,
+              "id": 7822,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "186:4:15",
@@ -1238,14 +1238,14 @@
                 "typeIdentifier": "t_rational_1_by_1",
                 "typeString": "int_const 1"
               },
-              "id": 7667,
+              "id": 7825,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7665,
+                "id": 7823,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1263,7 +1263,7 @@
               "operator": "<<",
               "rightExpression": {
                 "hexValue": "30",
-                "id": 7666,
+                "id": 7824,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1288,11 +1288,11 @@
           {
             "constant": true,
             "functionSelector": "9ac3237d",
-            "id": 7673,
+            "id": 7831,
             "mutability": "constant",
             "name": "TYPE_APP_SECOND",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "236:45:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1301,7 +1301,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7669,
+              "id": 7827,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "236:4:15",
@@ -1315,14 +1315,14 @@
                 "typeIdentifier": "t_rational_2_by_1",
                 "typeString": "int_const 2"
               },
-              "id": 7672,
+              "id": 7830,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7670,
+                "id": 7828,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1340,7 +1340,7 @@
               "operator": "<<",
               "rightExpression": {
                 "hexValue": "31",
-                "id": 7671,
+                "id": 7829,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1365,11 +1365,11 @@
           {
             "constant": true,
             "functionSelector": "c23ddadc",
-            "id": 7678,
+            "id": 7836,
             "mutability": "constant",
             "name": "JAIL",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "287:35:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1378,7 +1378,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7674,
+              "id": 7832,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "287:4:15",
@@ -1392,14 +1392,14 @@
                 "typeIdentifier": "t_rational_32768_by_1",
                 "typeString": "int_const 32768"
               },
-              "id": 7677,
+              "id": 7835,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7675,
+                "id": 7833,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1417,7 +1417,7 @@
               "operator": "<<",
               "rightExpression": {
                 "hexValue": "3135",
-                "id": 7676,
+                "id": 7834,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1442,11 +1442,11 @@
           {
             "constant": true,
             "functionSelector": "5c510c46",
-            "id": 7686,
+            "id": 7844,
             "mutability": "constant",
             "name": "BEFORE_AGREEMENT_CREATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "384:66:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1455,7 +1455,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7679,
+              "id": 7837,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "384:4:15",
@@ -1469,14 +1469,14 @@
                 "typeIdentifier": "t_rational_4294967296_by_1",
                 "typeString": "int_const 4294967296"
               },
-              "id": 7685,
+              "id": 7843,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7680,
+                "id": 7838,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1499,14 +1499,14 @@
                       "typeIdentifier": "t_rational_32_by_1",
                       "typeString": "int_const 32"
                     },
-                    "id": 7683,
+                    "id": 7841,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7681,
+                      "id": 7839,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1524,7 +1524,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 7682,
+                      "id": 7840,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1545,7 +1545,7 @@
                     }
                   }
                 ],
-                "id": 7684,
+                "id": 7842,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -1569,11 +1569,11 @@
           {
             "constant": true,
             "functionSelector": "b732da18",
-            "id": 7694,
+            "id": 7852,
             "mutability": "constant",
             "name": "AFTER_AGREEMENT_CREATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "456:65:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1582,7 +1582,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7687,
+              "id": 7845,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "456:4:15",
@@ -1596,14 +1596,14 @@
                 "typeIdentifier": "t_rational_8589934592_by_1",
                 "typeString": "int_const 8589934592"
               },
-              "id": 7693,
+              "id": 7851,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7688,
+                "id": 7846,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1626,14 +1626,14 @@
                       "typeIdentifier": "t_rational_33_by_1",
                       "typeString": "int_const 33"
                     },
-                    "id": 7691,
+                    "id": 7849,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7689,
+                      "id": 7847,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1651,7 +1651,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "31",
-                      "id": 7690,
+                      "id": 7848,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1672,7 +1672,7 @@
                     }
                   }
                 ],
-                "id": 7692,
+                "id": 7850,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -1696,11 +1696,11 @@
           {
             "constant": true,
             "functionSelector": "796795c3",
-            "id": 7702,
+            "id": 7860,
             "mutability": "constant",
             "name": "BEFORE_AGREEMENT_UPDATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "527:66:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1709,7 +1709,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7695,
+              "id": 7853,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "527:4:15",
@@ -1723,14 +1723,14 @@
                 "typeIdentifier": "t_rational_17179869184_by_1",
                 "typeString": "int_const 17179869184"
               },
-              "id": 7701,
+              "id": 7859,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7696,
+                "id": 7854,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1753,14 +1753,14 @@
                       "typeIdentifier": "t_rational_34_by_1",
                       "typeString": "int_const 34"
                     },
-                    "id": 7699,
+                    "id": 7857,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7697,
+                      "id": 7855,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1778,7 +1778,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "32",
-                      "id": 7698,
+                      "id": 7856,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1799,7 +1799,7 @@
                     }
                   }
                 ],
-                "id": 7700,
+                "id": 7858,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -1823,11 +1823,11 @@
           {
             "constant": true,
             "functionSelector": "6ecccafe",
-            "id": 7710,
+            "id": 7868,
             "mutability": "constant",
             "name": "AFTER_AGREEMENT_UPDATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "599:65:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1836,7 +1836,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7703,
+              "id": 7861,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "599:4:15",
@@ -1850,14 +1850,14 @@
                 "typeIdentifier": "t_rational_34359738368_by_1",
                 "typeString": "int_const 34359738368"
               },
-              "id": 7709,
+              "id": 7867,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7704,
+                "id": 7862,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1880,14 +1880,14 @@
                       "typeIdentifier": "t_rational_35_by_1",
                       "typeString": "int_const 35"
                     },
-                    "id": 7707,
+                    "id": 7865,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7705,
+                      "id": 7863,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1905,7 +1905,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "33",
-                      "id": 7706,
+                      "id": 7864,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1926,7 +1926,7 @@
                     }
                   }
                 ],
-                "id": 7708,
+                "id": 7866,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -1950,11 +1950,11 @@
           {
             "constant": true,
             "functionSelector": "596ef58d",
-            "id": 7718,
+            "id": 7876,
             "mutability": "constant",
             "name": "BEFORE_AGREEMENT_TERMINATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "670:69:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1963,7 +1963,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7711,
+              "id": 7869,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "670:4:15",
@@ -1977,14 +1977,14 @@
                 "typeIdentifier": "t_rational_68719476736_by_1",
                 "typeString": "int_const 68719476736"
               },
-              "id": 7717,
+              "id": 7875,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7712,
+                "id": 7870,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2007,14 +2007,14 @@
                       "typeIdentifier": "t_rational_36_by_1",
                       "typeString": "int_const 36"
                     },
-                    "id": 7715,
+                    "id": 7873,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7713,
+                      "id": 7871,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2032,7 +2032,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "34",
-                      "id": 7714,
+                      "id": 7872,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2053,7 +2053,7 @@
                     }
                   }
                 ],
-                "id": 7716,
+                "id": 7874,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -2077,11 +2077,11 @@
           {
             "constant": true,
             "functionSelector": "c8e63d13",
-            "id": 7726,
+            "id": 7884,
             "mutability": "constant",
             "name": "AFTER_AGREEMENT_TERMINATED_NOOP",
             "nodeType": "VariableDeclaration",
-            "scope": 7727,
+            "scope": 7885,
             "src": "745:68:15",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2090,7 +2090,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 7719,
+              "id": 7877,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "745:4:15",
@@ -2104,14 +2104,14 @@
                 "typeIdentifier": "t_rational_137438953472_by_1",
                 "typeString": "int_const 137438953472"
               },
-              "id": 7725,
+              "id": 7883,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 7720,
+                "id": 7878,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2134,14 +2134,14 @@
                       "typeIdentifier": "t_rational_37_by_1",
                       "typeString": "int_const 37"
                     },
-                    "id": 7723,
+                    "id": 7881,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "3332",
-                      "id": 7721,
+                      "id": 7879,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2159,7 +2159,7 @@
                     "operator": "+",
                     "rightExpression": {
                       "hexValue": "35",
-                      "id": 7722,
+                      "id": 7880,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2180,7 +2180,7 @@
                     }
                   }
                 ],
-                "id": 7724,
+                "id": 7882,
                 "isConstant": false,
                 "isInlineArray": false,
                 "isLValue": false,
@@ -2202,7 +2202,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 7728,
+        "scope": 7886,
         "src": "105:712:15"
       }
     ],
@@ -2214,7 +2214,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-28T17:04:34.263Z",
+  "updatedAt": "2020-09-30T18:18:27.042Z",
   "devdoc": {
     "details": "Super app definitions library",
     "kind": "dev",

@@ -1,9 +1,9 @@
 {
   "contractName": "AgreementLibrary",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.1+commit.f4a555be\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/agreements/AgreementLibrary.sol\":\"AgreementLibrary\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/agreements/AgreementLibrary.sol\":{\"keccak256\":\"0xc78343e175b394f5d720934dbde957a14031fb7747224f2d3567449cf3411966\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://46c396ef568b85aa55607a1850d5587afb268a5abbf5a6dd30d04c720e254b8f\",\"dweb:/ipfs/Qmb5ZefXvsAZHbtG8J4YCaoM6HveJ4Q5N6xXvLYtAavukL\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperAgreement.sol\":{\"keccak256\":\"0x1515ee00700f5ae5cece8dda6d62e0c12056176dc2c41933487ba11b8aaa743b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0840cdf8e3c6545b76b60c205c03abc011b8ede8256c5d5a65476de4584a5f5\",\"dweb:/ipfs/Qmf6JcWedy2BxmzN5xFJ86SwfxGEX81Ac3Rza8NdqWj19H\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperApp.sol\":{\"keccak256\":\"0x8a71d633e698727749295ee6abaf6c37fa42f1b77b2d222d1a4eaffa208c8c49\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://47a2af58bed4fbffc85650b99d913105ca8988962ace76153dedd00d4bc3ca8a\",\"dweb:/ipfs/QmPZ5vHgUaUADJFVN6LnFzQgh28UzK1Lt7F6cFDTcWBE8W\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol\":{\"keccak256\":\"0xf55483208e0ed78950099e4a90e86e8847960614d0bdc94b463cb8d35bd24237\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8651f054d73ebac14ab69f5a1414d18229d2d5e45cf510746e124a6f350c8983\",\"dweb:/ipfs/Qmc6r7J3ZDKw56HqU2t9pif5xFuSnpeJwBqyF493g5dhBL\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol\":{\"keccak256\":\"0x7e4abf6fec6907b760c2289e863a08d52f11e887abe20435be8be45f4d2f9f74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6ea4c169ee533273ece99c417cdfbf0491e43bce616be184b56ccf61de25b34\",\"dweb:/ipfs/QmU2k9gEsynrXzfE9cehUXSyWjqoxiYhNBPmBfiAVduRnC\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol\":{\"keccak256\":\"0xf1fc334274dc956d0508ab5d3037979de789e9e858ecc346b87cdec472d7261b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://950a5fd2942ee58611ea24bbe23d0e6cbb83f6e5c32384134c85f179c373dbb1\",\"dweb:/ipfs/QmdcZkqVuxTu5C5NhpbSXYunUDkZbcs8NMxBW1EYtThAtY\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/SuperAppDefinitions.sol\":{\"keccak256\":\"0x1a5356278b5f0f2100e7d3db525a9c20d303cc0de571e53123cb7fd9485e9bfb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4bee42a2ce61d07d84b18c36e1683d1f0a713883caa41698282aa3d64a876ae2\",\"dweb:/ipfs/QmXmnuEpXunMGYBZhraHa2bLit4dNqhnhfD6cQ1w6zucmB\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/tokens/ERC20WithTokenInfo.sol\":{\"keccak256\":\"0x40fb60ef5e1b09749d796da8d095a884418eec5a5cf753a8b3ba40d4fa62a450\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://435699cbab16375d49e4311a96ac4218bb752e4456c7512962259ab1cf452637\",\"dweb:/ipfs/QmTUKuFRhB2UfkRM3iEJjh1b1F2takvbppVvuJU8jH6BAF\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/tokens/TokenInfo.sol\":{\"keccak256\":\"0xa60ff361f5c525b21081288ebee8ed4d68f8b5b8e86d8138198d046141fba35c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e3239450da65109f576d28fc11cb0df7ce7aa8a41566a5f0ef97a7c8a1f3a55\",\"dweb:/ipfs/QmQcjb6dNQELxPWq12x21Cd18TbYszPNxFMXxYpXGC1Wi8\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b\",\"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202d65876378aa6d91c0581809e2a9fdad402963c8d7f29cff70a9ee6ccd7d8ceb64736f6c63430007010033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202d65876378aa6d91c0581809e2a9fdad402963c8d7f29cff70a9ee6ccd7d8ceb64736f6c63430007010033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.1+commit.f4a555be\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/agreements/AgreementLibrary.sol\":\"AgreementLibrary\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/agreements/AgreementLibrary.sol\":{\"keccak256\":\"0xc78343e175b394f5d720934dbde957a14031fb7747224f2d3567449cf3411966\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://46c396ef568b85aa55607a1850d5587afb268a5abbf5a6dd30d04c720e254b8f\",\"dweb:/ipfs/Qmb5ZefXvsAZHbtG8J4YCaoM6HveJ4Q5N6xXvLYtAavukL\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperAgreement.sol\":{\"keccak256\":\"0x1515ee00700f5ae5cece8dda6d62e0c12056176dc2c41933487ba11b8aaa743b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0840cdf8e3c6545b76b60c205c03abc011b8ede8256c5d5a65476de4584a5f5\",\"dweb:/ipfs/Qmf6JcWedy2BxmzN5xFJ86SwfxGEX81Ac3Rza8NdqWj19H\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperApp.sol\":{\"keccak256\":\"0x8a71d633e698727749295ee6abaf6c37fa42f1b77b2d222d1a4eaffa208c8c49\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://47a2af58bed4fbffc85650b99d913105ca8988962ace76153dedd00d4bc3ca8a\",\"dweb:/ipfs/QmPZ5vHgUaUADJFVN6LnFzQgh28UzK1Lt7F6cFDTcWBE8W\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol\":{\"keccak256\":\"0x52706cd9abefd5879dcebd1bc098a520bcf9d0a1a525ef32e2a6bd614f580090\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6acc843e7bed925c0fc43a2a1b00b84d17b1ad0a62ac12860903f2c6cb9b520e\",\"dweb:/ipfs/QmXDBZJEiTdotFkE7DuL6x4ZF1xiarcy3pEhpX7sihDwhc\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol\":{\"keccak256\":\"0x7e4abf6fec6907b760c2289e863a08d52f11e887abe20435be8be45f4d2f9f74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6ea4c169ee533273ece99c417cdfbf0491e43bce616be184b56ccf61de25b34\",\"dweb:/ipfs/QmU2k9gEsynrXzfE9cehUXSyWjqoxiYhNBPmBfiAVduRnC\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol\":{\"keccak256\":\"0xf1fc334274dc956d0508ab5d3037979de789e9e858ecc346b87cdec472d7261b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://950a5fd2942ee58611ea24bbe23d0e6cbb83f6e5c32384134c85f179c373dbb1\",\"dweb:/ipfs/QmdcZkqVuxTu5C5NhpbSXYunUDkZbcs8NMxBW1EYtThAtY\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/superfluid/SuperAppDefinitions.sol\":{\"keccak256\":\"0x1a5356278b5f0f2100e7d3db525a9c20d303cc0de571e53123cb7fd9485e9bfb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4bee42a2ce61d07d84b18c36e1683d1f0a713883caa41698282aa3d64a876ae2\",\"dweb:/ipfs/QmXmnuEpXunMGYBZhraHa2bLit4dNqhnhfD6cQ1w6zucmB\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/tokens/ERC20WithTokenInfo.sol\":{\"keccak256\":\"0x40fb60ef5e1b09749d796da8d095a884418eec5a5cf753a8b3ba40d4fa62a450\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://435699cbab16375d49e4311a96ac4218bb752e4456c7512962259ab1cf452637\",\"dweb:/ipfs/QmTUKuFRhB2UfkRM3iEJjh1b1F2takvbppVvuJU8jH6BAF\"]},\"/home/hellwolf/Projects/superfluid/ethereum-contracts/contracts/interfaces/tokens/TokenInfo.sol\":{\"keccak256\":\"0xa60ff361f5c525b21081288ebee8ed4d68f8b5b8e86d8138198d046141fba35c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e3239450da65109f576d28fc11cb0df7ce7aa8a41566a5f0ef97a7c8a1f3a55\",\"dweb:/ipfs/QmQcjb6dNQELxPWq12x21Cd18TbYszPNxFMXxYpXGC1Wi8\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b\",\"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212205fd5bf61c76c07463a8368c7639e22066518a7f47bf275f92d2925ca296742e364736f6c63430007010033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212205fd5bf61c76c07463a8368c7639e22066518a7f47bf275f92d2925ca296742e364736f6c63430007010033",
   "immutableReferences": {},
   "sourceMap": "216:6264:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "216:6264:1:-:0;;;;;;;;",
@@ -35,7 +35,7 @@
         "id": 108,
         "nodeType": "ImportDirective",
         "scope": 537,
-        "sourceUnit": 7598,
+        "sourceUnit": 7756,
         "src": "56:50:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -46,7 +46,7 @@
         "id": 109,
         "nodeType": "ImportDirective",
         "scope": 537,
-        "sourceUnit": 7098,
+        "sourceUnit": 7239,
         "src": "107:48:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -57,7 +57,7 @@
         "id": 110,
         "nodeType": "ImportDirective",
         "scope": 537,
-        "sourceUnit": 7728,
+        "sourceUnit": 7886,
         "src": "156:58:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -341,7 +341,7 @@
                           "referencedDeclaration": 121,
                           "src": "542:4:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                            "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                             "typeString": "contract ISuperfluid"
                           }
                         },
@@ -352,7 +352,7 @@
                         "lValueRequested": false,
                         "memberName": "ctxUpdate",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7507,
+                        "referencedDeclaration": 7665,
                         "src": "542:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$_t_uint8_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$",
@@ -407,17 +407,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 120,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "404:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -688,7 +688,7 @@
                           "referencedDeclaration": 146,
                           "src": "977:4:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                            "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                             "typeString": "contract ISuperfluid"
                           }
                         },
@@ -699,7 +699,7 @@
                         "lValueRequested": false,
                         "memberName": "decodeCtx",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7596,
+                        "referencedDeclaration": 7754,
                         "src": "977:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_pure$_t_bytes_memory_ptr_$returns$_t_bytes4_$_t_uint8_$_t_address_$_t_uint256_$_t_uint256_$",
@@ -754,17 +754,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 145,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "702:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -976,10 +976,10 @@
                           "name": "ISuperApp",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7097,
+                          "referencedDeclaration": 7238,
                           "src": "1438:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                             "typeString": "type(contract ISuperApp)"
                           }
                         },
@@ -994,7 +994,7 @@
                         "src": "1438:18:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       }
@@ -1002,7 +1002,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       ],
@@ -1014,7 +1014,7 @@
                         "referencedDeclaration": 176,
                         "src": "1418:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -1025,10 +1025,10 @@
                       "lValueRequested": false,
                       "memberName": "getAppManifest",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7440,
+                      "referencedDeclaration": 7598,
                       "src": "1418:19:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7097_$returns$_t_bool_$_t_uint256_$",
+                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7238_$returns$_t_bool_$_t_uint256_$",
                         "typeString": "function (contract ISuperApp) view external returns (bool,uint256)"
                       }
                     },
@@ -1252,7 +1252,7 @@
                               "referencedDeclaration": 178,
                               "src": "1629:5:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               }
                             },
@@ -1300,7 +1300,7 @@
                                 "typeString": "bytes4"
                               },
                               {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               },
                               {
@@ -1436,10 +1436,10 @@
                                   "name": "ISuperApp",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 7097,
+                                  "referencedDeclaration": 7238,
                                   "src": "1790:9:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                                    "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                                     "typeString": "type(contract ISuperApp)"
                                   }
                                 },
@@ -1454,7 +1454,7 @@
                                 "src": "1790:18:1",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                  "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                   "typeString": "contract ISuperApp"
                                 }
                               },
@@ -1486,7 +1486,7 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                  "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                   "typeString": "contract ISuperApp"
                                 },
                                 {
@@ -1506,7 +1506,7 @@
                                 "referencedDeclaration": 176,
                                 "src": "1763:4:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                                  "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                                   "typeString": "contract ISuperfluid"
                                 }
                               },
@@ -1517,10 +1517,10 @@
                               "lValueRequested": false,
                               "memberName": "callAppBeforeCallback",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 7483,
+                              "referencedDeclaration": 7641,
                               "src": "1763:26:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7097_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                                "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7238_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                                 "typeString": "function (contract ISuperApp,bytes memory,bytes memory) external returns (bytes memory,bytes memory)"
                               }
                             },
@@ -1627,17 +1627,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 175,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "1094:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -1654,17 +1654,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 177,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "1120:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -1938,10 +1938,10 @@
                           "name": "ISuperApp",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7097,
+                          "referencedDeclaration": 7238,
                           "src": "2257:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                             "typeString": "type(contract ISuperApp)"
                           }
                         },
@@ -1956,7 +1956,7 @@
                         "src": "2257:18:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       }
@@ -1964,7 +1964,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       ],
@@ -1976,7 +1976,7 @@
                         "referencedDeclaration": 250,
                         "src": "2237:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -1987,10 +1987,10 @@
                       "lValueRequested": false,
                       "memberName": "getAppManifest",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7440,
+                      "referencedDeclaration": 7598,
                       "src": "2237:19:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7097_$returns$_t_bool_$_t_uint256_$",
+                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7238_$returns$_t_bool_$_t_uint256_$",
                         "typeString": "function (contract ISuperApp) view external returns (bool,uint256)"
                       }
                     },
@@ -2214,7 +2214,7 @@
                               "referencedDeclaration": 252,
                               "src": "2449:5:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               }
                             },
@@ -2274,7 +2274,7 @@
                                 "typeString": "bytes4"
                               },
                               {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               },
                               {
@@ -2366,10 +2366,10 @@
                                 "name": "ISuperApp",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7097,
+                                "referencedDeclaration": 7238,
                                 "src": "2621:9:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                                  "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                                   "typeString": "type(contract ISuperApp)"
                                 }
                               },
@@ -2384,7 +2384,7 @@
                               "src": "2621:18:1",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                 "typeString": "contract ISuperApp"
                               }
                             },
@@ -2416,7 +2416,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                 "typeString": "contract ISuperApp"
                               },
                               {
@@ -2436,7 +2436,7 @@
                               "referencedDeclaration": 250,
                               "src": "2595:4:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                                "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                                 "typeString": "contract ISuperfluid"
                               }
                             },
@@ -2447,10 +2447,10 @@
                             "lValueRequested": false,
                             "memberName": "callAppAfterCallback",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7494,
+                            "referencedDeclaration": 7652,
                             "src": "2595:25:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7097_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                              "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7238_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                               "typeString": "function (contract ISuperApp,bytes memory,bytes memory) external returns (bytes memory)"
                             }
                           },
@@ -2570,17 +2570,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 249,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "1927:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -2597,17 +2597,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 251,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "1953:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -2803,10 +2803,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "3024:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -2817,10 +2817,10 @@
                           "lValueRequested": false,
                           "memberName": "beforeAgreementCreated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7020,
+                          "referencedDeclaration": 7161,
                           "src": "3024:32:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.beforeAgreementCreated(contract ISuperToken,bytes calldata,address,bytes32) view returns (bytes memory)"
                           }
                         },
@@ -2843,10 +2843,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "3079:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -2857,7 +2857,7 @@
                         "lValueRequested": false,
                         "memberName": "BEFORE_AGREEMENT_CREATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7686,
+                        "referencedDeclaration": 7844,
                         "src": "3079:49:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2872,7 +2872,7 @@
                         "referencedDeclaration": 315,
                         "src": "3142:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -2884,7 +2884,7 @@
                         "referencedDeclaration": 317,
                         "src": "3160:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -2948,11 +2948,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -2979,7 +2979,7 @@
                       "referencedDeclaration": 244,
                       "src": "2994:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32) returns (bytes memory,bytes memory)"
                       }
                     },
@@ -3026,17 +3026,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 314,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "2736:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -3053,17 +3053,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 316,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "2762:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -3259,10 +3259,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "3615:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -3273,10 +3273,10 @@
                           "lValueRequested": false,
                           "memberName": "afterAgreementCreated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7036,
+                          "referencedDeclaration": 7177,
                           "src": "3615:31:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.afterAgreementCreated(contract ISuperToken,bytes calldata,address,bytes32,bytes calldata) returns (bytes memory)"
                           }
                         },
@@ -3299,10 +3299,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "3669:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -3313,7 +3313,7 @@
                         "lValueRequested": false,
                         "memberName": "AFTER_AGREEMENT_CREATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7694,
+                        "referencedDeclaration": 7852,
                         "src": "3669:48:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3328,7 +3328,7 @@
                         "referencedDeclaration": 349,
                         "src": "3731:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -3340,7 +3340,7 @@
                         "referencedDeclaration": 351,
                         "src": "3749:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -3416,11 +3416,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -3451,7 +3451,7 @@
                       "referencedDeclaration": 313,
                       "src": "3586:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32,bytes memory) returns (bytes memory)"
                       }
                     },
@@ -3498,17 +3498,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 348,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "3319:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -3525,17 +3525,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 350,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "3345:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -3731,10 +3731,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "4217:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -3745,10 +3745,10 @@
                           "lValueRequested": false,
                           "memberName": "beforeAgreementUpdated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7050,
+                          "referencedDeclaration": 7191,
                           "src": "4217:32:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.beforeAgreementUpdated(contract ISuperToken,bytes calldata,address,bytes32) view returns (bytes memory)"
                           }
                         },
@@ -3771,10 +3771,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "4272:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -3785,7 +3785,7 @@
                         "lValueRequested": false,
                         "memberName": "BEFORE_AGREEMENT_UPDATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7702,
+                        "referencedDeclaration": 7860,
                         "src": "4272:49:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3800,7 +3800,7 @@
                         "referencedDeclaration": 384,
                         "src": "4335:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -3812,7 +3812,7 @@
                         "referencedDeclaration": 386,
                         "src": "4353:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -3876,11 +3876,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -3907,7 +3907,7 @@
                       "referencedDeclaration": 244,
                       "src": "4187:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32) returns (bytes memory,bytes memory)"
                       }
                     },
@@ -3954,17 +3954,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 383,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "3929:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -3981,17 +3981,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 385,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "3955:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -4187,10 +4187,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "4807:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -4201,10 +4201,10 @@
                           "lValueRequested": false,
                           "memberName": "afterAgreementUpdated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7066,
+                          "referencedDeclaration": 7207,
                           "src": "4807:31:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.afterAgreementUpdated(contract ISuperToken,bytes calldata,address,bytes32,bytes calldata) returns (bytes memory)"
                           }
                         },
@@ -4227,10 +4227,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "4861:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -4241,7 +4241,7 @@
                         "lValueRequested": false,
                         "memberName": "AFTER_AGREEMENT_UPDATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7710,
+                        "referencedDeclaration": 7868,
                         "src": "4861:48:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4256,7 +4256,7 @@
                         "referencedDeclaration": 418,
                         "src": "4923:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -4268,7 +4268,7 @@
                         "referencedDeclaration": 420,
                         "src": "4941:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -4344,11 +4344,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -4379,7 +4379,7 @@
                       "referencedDeclaration": 313,
                       "src": "4778:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32,bytes memory) returns (bytes memory)"
                       }
                     },
@@ -4426,17 +4426,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 417,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "4512:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -4453,17 +4453,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 419,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "4538:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -4659,10 +4659,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "5412:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -4673,10 +4673,10 @@
                           "lValueRequested": false,
                           "memberName": "beforeAgreementTerminated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7080,
+                          "referencedDeclaration": 7221,
                           "src": "5412:35:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.beforeAgreementTerminated(contract ISuperToken,bytes calldata,address,bytes32) view returns (bytes memory)"
                           }
                         },
@@ -4699,10 +4699,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "5470:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -4713,7 +4713,7 @@
                         "lValueRequested": false,
                         "memberName": "BEFORE_AGREEMENT_TERMINATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7718,
+                        "referencedDeclaration": 7876,
                         "src": "5470:52:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4728,7 +4728,7 @@
                         "referencedDeclaration": 453,
                         "src": "5536:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -4740,7 +4740,7 @@
                         "referencedDeclaration": 455,
                         "src": "5554:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -4804,11 +4804,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -4835,7 +4835,7 @@
                       "referencedDeclaration": 244,
                       "src": "5382:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32) returns (bytes memory,bytes memory)"
                       }
                     },
@@ -4882,17 +4882,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 452,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "5124:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -4909,17 +4909,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 454,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "5150:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -5115,10 +5115,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "6011:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -5129,10 +5129,10 @@
                           "lValueRequested": false,
                           "memberName": "afterAgreementTerminated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7096,
+                          "referencedDeclaration": 7237,
                           "src": "6011:34:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.afterAgreementTerminated(contract ISuperToken,bytes calldata,address,bytes32,bytes calldata) returns (bytes memory)"
                           }
                         },
@@ -5155,10 +5155,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "6068:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -5169,7 +5169,7 @@
                         "lValueRequested": false,
                         "memberName": "AFTER_AGREEMENT_TERMINATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7726,
+                        "referencedDeclaration": 7884,
                         "src": "6068:51:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5184,7 +5184,7 @@
                         "referencedDeclaration": 487,
                         "src": "6133:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -5196,7 +5196,7 @@
                         "referencedDeclaration": 489,
                         "src": "6151:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -5272,11 +5272,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -5307,7 +5307,7 @@
                       "referencedDeclaration": 313,
                       "src": "5982:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32,bytes memory) returns (bytes memory)"
                       }
                     },
@@ -5354,17 +5354,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 486,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "5716:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -5381,17 +5381,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 488,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "5742:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -5624,10 +5624,10 @@
                               "name": "ISuperfluid",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7597,
+                              "referencedDeclaration": 7755,
                               "src": "6431:11:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ISuperfluid_$7597_$",
+                                "typeIdentifier": "t_type$_t_contract$_ISuperfluid_$7755_$",
                                 "typeString": "type(contract ISuperfluid)"
                               }
                             },
@@ -5642,7 +5642,7 @@
                             "src": "6431:23:1",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                              "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                               "typeString": "contract ISuperfluid"
                             }
                           },
@@ -5653,10 +5653,10 @@
                           "lValueRequested": false,
                           "memberName": "getGovernance",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7378,
+                          "referencedDeclaration": 7536,
                           "src": "6431:37:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ISuperfluidGovernance_$7660_$",
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ISuperfluidGovernance_$7818_$",
                             "typeString": "function () view external returns (contract ISuperfluidGovernance)"
                           }
                         },
@@ -5671,7 +5671,7 @@
                         "src": "6431:39:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                           "typeString": "contract ISuperfluidGovernance"
                         }
                       }
@@ -5679,7 +5679,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                           "typeString": "contract ISuperfluidGovernance"
                         }
                       ],
@@ -5687,10 +5687,10 @@
                       "name": "ISuperfluidGovernance",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7660,
+                      "referencedDeclaration": 7818,
                       "src": "6409:21:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ISuperfluidGovernance_$7660_$",
+                        "typeIdentifier": "t_type$_t_contract$_ISuperfluidGovernance_$7818_$",
                         "typeString": "type(contract ISuperfluidGovernance)"
                       }
                     },
@@ -5705,7 +5705,7 @@
                     "src": "6409:62:1",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                       "typeString": "contract ISuperfluidGovernance"
                     }
                   },
@@ -5743,17 +5743,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                    "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                     "typeString": "contract ISuperfluidGovernance"
                   },
                   "typeName": {
                     "id": 522,
                     "name": "ISuperfluidGovernance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7660,
+                    "referencedDeclaration": 7818,
                     "src": "6361:21:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                       "typeString": "contract ISuperfluidGovernance"
                     }
                   },
@@ -5802,7 +5802,7 @@
         "id": 108,
         "nodeType": "ImportDirective",
         "scope": 537,
-        "sourceUnit": 7598,
+        "sourceUnit": 7756,
         "src": "56:50:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5813,7 +5813,7 @@
         "id": 109,
         "nodeType": "ImportDirective",
         "scope": 537,
-        "sourceUnit": 7098,
+        "sourceUnit": 7239,
         "src": "107:48:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5824,7 +5824,7 @@
         "id": 110,
         "nodeType": "ImportDirective",
         "scope": 537,
-        "sourceUnit": 7728,
+        "sourceUnit": 7886,
         "src": "156:58:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6108,7 +6108,7 @@
                           "referencedDeclaration": 121,
                           "src": "542:4:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                            "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                             "typeString": "contract ISuperfluid"
                           }
                         },
@@ -6119,7 +6119,7 @@
                         "lValueRequested": false,
                         "memberName": "ctxUpdate",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7507,
+                        "referencedDeclaration": 7665,
                         "src": "542:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$_t_uint8_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$",
@@ -6174,17 +6174,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 120,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "404:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -6455,7 +6455,7 @@
                           "referencedDeclaration": 146,
                           "src": "977:4:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                            "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                             "typeString": "contract ISuperfluid"
                           }
                         },
@@ -6466,7 +6466,7 @@
                         "lValueRequested": false,
                         "memberName": "decodeCtx",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7596,
+                        "referencedDeclaration": 7754,
                         "src": "977:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_pure$_t_bytes_memory_ptr_$returns$_t_bytes4_$_t_uint8_$_t_address_$_t_uint256_$_t_uint256_$",
@@ -6521,17 +6521,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 145,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "702:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -6743,10 +6743,10 @@
                           "name": "ISuperApp",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7097,
+                          "referencedDeclaration": 7238,
                           "src": "1438:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                             "typeString": "type(contract ISuperApp)"
                           }
                         },
@@ -6761,7 +6761,7 @@
                         "src": "1438:18:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       }
@@ -6769,7 +6769,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       ],
@@ -6781,7 +6781,7 @@
                         "referencedDeclaration": 176,
                         "src": "1418:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -6792,10 +6792,10 @@
                       "lValueRequested": false,
                       "memberName": "getAppManifest",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7440,
+                      "referencedDeclaration": 7598,
                       "src": "1418:19:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7097_$returns$_t_bool_$_t_uint256_$",
+                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7238_$returns$_t_bool_$_t_uint256_$",
                         "typeString": "function (contract ISuperApp) view external returns (bool,uint256)"
                       }
                     },
@@ -7019,7 +7019,7 @@
                               "referencedDeclaration": 178,
                               "src": "1629:5:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               }
                             },
@@ -7067,7 +7067,7 @@
                                 "typeString": "bytes4"
                               },
                               {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               },
                               {
@@ -7203,10 +7203,10 @@
                                   "name": "ISuperApp",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 7097,
+                                  "referencedDeclaration": 7238,
                                   "src": "1790:9:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                                    "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                                     "typeString": "type(contract ISuperApp)"
                                   }
                                 },
@@ -7221,7 +7221,7 @@
                                 "src": "1790:18:1",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                  "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                   "typeString": "contract ISuperApp"
                                 }
                               },
@@ -7253,7 +7253,7 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                  "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                   "typeString": "contract ISuperApp"
                                 },
                                 {
@@ -7273,7 +7273,7 @@
                                 "referencedDeclaration": 176,
                                 "src": "1763:4:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                                  "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                                   "typeString": "contract ISuperfluid"
                                 }
                               },
@@ -7284,10 +7284,10 @@
                               "lValueRequested": false,
                               "memberName": "callAppBeforeCallback",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 7483,
+                              "referencedDeclaration": 7641,
                               "src": "1763:26:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7097_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                                "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7238_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                                 "typeString": "function (contract ISuperApp,bytes memory,bytes memory) external returns (bytes memory,bytes memory)"
                               }
                             },
@@ -7394,17 +7394,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 175,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "1094:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -7421,17 +7421,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 177,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "1120:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -7705,10 +7705,10 @@
                           "name": "ISuperApp",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7097,
+                          "referencedDeclaration": 7238,
                           "src": "2257:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                            "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                             "typeString": "type(contract ISuperApp)"
                           }
                         },
@@ -7723,7 +7723,7 @@
                         "src": "2257:18:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       }
@@ -7731,7 +7731,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                          "typeIdentifier": "t_contract$_ISuperApp_$7238",
                           "typeString": "contract ISuperApp"
                         }
                       ],
@@ -7743,7 +7743,7 @@
                         "referencedDeclaration": 250,
                         "src": "2237:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -7754,10 +7754,10 @@
                       "lValueRequested": false,
                       "memberName": "getAppManifest",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7440,
+                      "referencedDeclaration": 7598,
                       "src": "2237:19:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7097_$returns$_t_bool_$_t_uint256_$",
+                        "typeIdentifier": "t_function_external_view$_t_contract$_ISuperApp_$7238_$returns$_t_bool_$_t_uint256_$",
                         "typeString": "function (contract ISuperApp) view external returns (bool,uint256)"
                       }
                     },
@@ -7981,7 +7981,7 @@
                               "referencedDeclaration": 252,
                               "src": "2449:5:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               }
                             },
@@ -8041,7 +8041,7 @@
                                 "typeString": "bytes4"
                               },
                               {
-                                "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                                "typeIdentifier": "t_contract$_ISuperToken_$7513",
                                 "typeString": "contract ISuperToken"
                               },
                               {
@@ -8133,10 +8133,10 @@
                                 "name": "ISuperApp",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7097,
+                                "referencedDeclaration": 7238,
                                 "src": "2621:9:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                                  "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                                   "typeString": "type(contract ISuperApp)"
                                 }
                               },
@@ -8151,7 +8151,7 @@
                               "src": "2621:18:1",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                 "typeString": "contract ISuperApp"
                               }
                             },
@@ -8183,7 +8183,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_ISuperApp_$7097",
+                                "typeIdentifier": "t_contract$_ISuperApp_$7238",
                                 "typeString": "contract ISuperApp"
                               },
                               {
@@ -8203,7 +8203,7 @@
                               "referencedDeclaration": 250,
                               "src": "2595:4:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                                "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                                 "typeString": "contract ISuperfluid"
                               }
                             },
@@ -8214,10 +8214,10 @@
                             "lValueRequested": false,
                             "memberName": "callAppAfterCallback",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7494,
+                            "referencedDeclaration": 7652,
                             "src": "2595:25:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7097_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                              "typeIdentifier": "t_function_external_nonpayable$_t_contract$_ISuperApp_$7238_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                               "typeString": "function (contract ISuperApp,bytes memory,bytes memory) external returns (bytes memory)"
                             }
                           },
@@ -8337,17 +8337,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 249,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "1927:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -8364,17 +8364,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 251,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "1953:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -8570,10 +8570,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "3024:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -8584,10 +8584,10 @@
                           "lValueRequested": false,
                           "memberName": "beforeAgreementCreated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7020,
+                          "referencedDeclaration": 7161,
                           "src": "3024:32:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.beforeAgreementCreated(contract ISuperToken,bytes calldata,address,bytes32) view returns (bytes memory)"
                           }
                         },
@@ -8610,10 +8610,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "3079:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -8624,7 +8624,7 @@
                         "lValueRequested": false,
                         "memberName": "BEFORE_AGREEMENT_CREATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7686,
+                        "referencedDeclaration": 7844,
                         "src": "3079:49:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -8639,7 +8639,7 @@
                         "referencedDeclaration": 315,
                         "src": "3142:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -8651,7 +8651,7 @@
                         "referencedDeclaration": 317,
                         "src": "3160:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -8715,11 +8715,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -8746,7 +8746,7 @@
                       "referencedDeclaration": 244,
                       "src": "2994:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32) returns (bytes memory,bytes memory)"
                       }
                     },
@@ -8793,17 +8793,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 314,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "2736:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -8820,17 +8820,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 316,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "2762:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -9026,10 +9026,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "3615:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -9040,10 +9040,10 @@
                           "lValueRequested": false,
                           "memberName": "afterAgreementCreated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7036,
+                          "referencedDeclaration": 7177,
                           "src": "3615:31:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.afterAgreementCreated(contract ISuperToken,bytes calldata,address,bytes32,bytes calldata) returns (bytes memory)"
                           }
                         },
@@ -9066,10 +9066,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "3669:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -9080,7 +9080,7 @@
                         "lValueRequested": false,
                         "memberName": "AFTER_AGREEMENT_CREATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7694,
+                        "referencedDeclaration": 7852,
                         "src": "3669:48:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9095,7 +9095,7 @@
                         "referencedDeclaration": 349,
                         "src": "3731:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -9107,7 +9107,7 @@
                         "referencedDeclaration": 351,
                         "src": "3749:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -9183,11 +9183,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -9218,7 +9218,7 @@
                       "referencedDeclaration": 313,
                       "src": "3586:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32,bytes memory) returns (bytes memory)"
                       }
                     },
@@ -9265,17 +9265,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 348,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "3319:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -9292,17 +9292,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 350,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "3345:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -9498,10 +9498,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "4217:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -9512,10 +9512,10 @@
                           "lValueRequested": false,
                           "memberName": "beforeAgreementUpdated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7050,
+                          "referencedDeclaration": 7191,
                           "src": "4217:32:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.beforeAgreementUpdated(contract ISuperToken,bytes calldata,address,bytes32) view returns (bytes memory)"
                           }
                         },
@@ -9538,10 +9538,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "4272:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -9552,7 +9552,7 @@
                         "lValueRequested": false,
                         "memberName": "BEFORE_AGREEMENT_UPDATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7702,
+                        "referencedDeclaration": 7860,
                         "src": "4272:49:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9567,7 +9567,7 @@
                         "referencedDeclaration": 384,
                         "src": "4335:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -9579,7 +9579,7 @@
                         "referencedDeclaration": 386,
                         "src": "4353:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -9643,11 +9643,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -9674,7 +9674,7 @@
                       "referencedDeclaration": 244,
                       "src": "4187:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32) returns (bytes memory,bytes memory)"
                       }
                     },
@@ -9721,17 +9721,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 383,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "3929:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -9748,17 +9748,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 385,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "3955:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -9954,10 +9954,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "4807:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -9968,10 +9968,10 @@
                           "lValueRequested": false,
                           "memberName": "afterAgreementUpdated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7066,
+                          "referencedDeclaration": 7207,
                           "src": "4807:31:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.afterAgreementUpdated(contract ISuperToken,bytes calldata,address,bytes32,bytes calldata) returns (bytes memory)"
                           }
                         },
@@ -9994,10 +9994,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "4861:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -10008,7 +10008,7 @@
                         "lValueRequested": false,
                         "memberName": "AFTER_AGREEMENT_UPDATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7710,
+                        "referencedDeclaration": 7868,
                         "src": "4861:48:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10023,7 +10023,7 @@
                         "referencedDeclaration": 418,
                         "src": "4923:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -10035,7 +10035,7 @@
                         "referencedDeclaration": 420,
                         "src": "4941:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -10111,11 +10111,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -10146,7 +10146,7 @@
                       "referencedDeclaration": 313,
                       "src": "4778:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32,bytes memory) returns (bytes memory)"
                       }
                     },
@@ -10193,17 +10193,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 417,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "4512:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -10220,17 +10220,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 419,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "4538:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -10426,10 +10426,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "5412:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -10440,10 +10440,10 @@
                           "lValueRequested": false,
                           "memberName": "beforeAgreementTerminated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7080,
+                          "referencedDeclaration": 7221,
                           "src": "5412:35:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_view$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.beforeAgreementTerminated(contract ISuperToken,bytes calldata,address,bytes32) view returns (bytes memory)"
                           }
                         },
@@ -10466,10 +10466,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "5470:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -10480,7 +10480,7 @@
                         "lValueRequested": false,
                         "memberName": "BEFORE_AGREEMENT_TERMINATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7718,
+                        "referencedDeclaration": 7876,
                         "src": "5470:52:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10495,7 +10495,7 @@
                         "referencedDeclaration": 453,
                         "src": "5536:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -10507,7 +10507,7 @@
                         "referencedDeclaration": 455,
                         "src": "5554:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -10571,11 +10571,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -10602,7 +10602,7 @@
                       "referencedDeclaration": 244,
                       "src": "5382:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32) returns (bytes memory,bytes memory)"
                       }
                     },
@@ -10649,17 +10649,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 452,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "5124:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -10676,17 +10676,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 454,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "5150:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -10882,10 +10882,10 @@
                             "name": "ISuperApp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7097,
+                            "referencedDeclaration": 7238,
                             "src": "6011:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7097_$",
+                              "typeIdentifier": "t_type$_t_contract$_ISuperApp_$7238_$",
                               "typeString": "type(contract ISuperApp)"
                             }
                           },
@@ -10896,10 +10896,10 @@
                           "lValueRequested": false,
                           "memberName": "afterAgreementTerminated",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7096,
+                          "referencedDeclaration": 7237,
                           "src": "6011:34:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7355_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeIdentifier": "t_function_declaration_nonpayable$_t_contract$_ISuperToken_$7513_$_t_bytes_calldata_ptr_$_t_address_$_t_bytes32_$_t_bytes_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function ISuperApp.afterAgreementTerminated(contract ISuperToken,bytes calldata,address,bytes32,bytes calldata) returns (bytes memory)"
                           }
                         },
@@ -10922,10 +10922,10 @@
                           "name": "SuperAppDefinitions",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7727,
+                          "referencedDeclaration": 7885,
                           "src": "6068:19:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7727_$",
+                            "typeIdentifier": "t_type$_t_contract$_SuperAppDefinitions_$7885_$",
                             "typeString": "type(library SuperAppDefinitions)"
                           }
                         },
@@ -10936,7 +10936,7 @@
                         "lValueRequested": false,
                         "memberName": "AFTER_AGREEMENT_TERMINATED_NOOP",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7726,
+                        "referencedDeclaration": 7884,
                         "src": "6068:51:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10951,7 +10951,7 @@
                         "referencedDeclaration": 487,
                         "src": "6133:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         }
                       },
@@ -10963,7 +10963,7 @@
                         "referencedDeclaration": 489,
                         "src": "6151:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         }
                       },
@@ -11039,11 +11039,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                          "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                           "typeString": "contract ISuperfluid"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                          "typeIdentifier": "t_contract$_ISuperToken_$7513",
                           "typeString": "contract ISuperToken"
                         },
                         {
@@ -11074,7 +11074,7 @@
                       "referencedDeclaration": 313,
                       "src": "5982:15:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7597_$_t_contract$_ISuperToken_$7355_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$_t_uint256_$_t_contract$_ISuperfluid_$7755_$_t_contract$_ISuperToken_$7513_$_t_bytes_memory_ptr_$_t_address_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes4,uint256,contract ISuperfluid,contract ISuperToken,bytes memory,address,address,bytes32,bytes memory) returns (bytes memory)"
                       }
                     },
@@ -11121,17 +11121,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                    "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                     "typeString": "contract ISuperfluid"
                   },
                   "typeName": {
                     "id": 486,
                     "name": "ISuperfluid",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7597,
+                    "referencedDeclaration": 7755,
                     "src": "5716:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                      "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                       "typeString": "contract ISuperfluid"
                     }
                   },
@@ -11148,17 +11148,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                    "typeIdentifier": "t_contract$_ISuperToken_$7513",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
                     "id": 488,
                     "name": "ISuperToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7355,
+                    "referencedDeclaration": 7513,
                     "src": "5742:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$7355",
+                      "typeIdentifier": "t_contract$_ISuperToken_$7513",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -11391,10 +11391,10 @@
                               "name": "ISuperfluid",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7597,
+                              "referencedDeclaration": 7755,
                               "src": "6431:11:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ISuperfluid_$7597_$",
+                                "typeIdentifier": "t_type$_t_contract$_ISuperfluid_$7755_$",
                                 "typeString": "type(contract ISuperfluid)"
                               }
                             },
@@ -11409,7 +11409,7 @@
                             "src": "6431:23:1",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ISuperfluid_$7597",
+                              "typeIdentifier": "t_contract$_ISuperfluid_$7755",
                               "typeString": "contract ISuperfluid"
                             }
                           },
@@ -11420,10 +11420,10 @@
                           "lValueRequested": false,
                           "memberName": "getGovernance",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7378,
+                          "referencedDeclaration": 7536,
                           "src": "6431:37:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ISuperfluidGovernance_$7660_$",
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_ISuperfluidGovernance_$7818_$",
                             "typeString": "function () view external returns (contract ISuperfluidGovernance)"
                           }
                         },
@@ -11438,7 +11438,7 @@
                         "src": "6431:39:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                           "typeString": "contract ISuperfluidGovernance"
                         }
                       }
@@ -11446,7 +11446,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                          "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                           "typeString": "contract ISuperfluidGovernance"
                         }
                       ],
@@ -11454,10 +11454,10 @@
                       "name": "ISuperfluidGovernance",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7660,
+                      "referencedDeclaration": 7818,
                       "src": "6409:21:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ISuperfluidGovernance_$7660_$",
+                        "typeIdentifier": "t_type$_t_contract$_ISuperfluidGovernance_$7818_$",
                         "typeString": "type(contract ISuperfluidGovernance)"
                       }
                     },
@@ -11472,7 +11472,7 @@
                     "src": "6409:62:1",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                       "typeString": "contract ISuperfluidGovernance"
                     }
                   },
@@ -11510,17 +11510,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                    "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                     "typeString": "contract ISuperfluidGovernance"
                   },
                   "typeName": {
                     "id": 522,
                     "name": "ISuperfluidGovernance",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7660,
+                    "referencedDeclaration": 7818,
                     "src": "6361:21:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7660",
+                      "typeIdentifier": "t_contract$_ISuperfluidGovernance_$7818",
                       "typeString": "contract ISuperfluidGovernance"
                     }
                   },
@@ -11548,7 +11548,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-28T17:04:34.160Z",
+  "updatedAt": "2020-09-30T18:18:26.955Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
