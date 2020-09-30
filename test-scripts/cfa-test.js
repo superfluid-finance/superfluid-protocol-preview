@@ -15,7 +15,11 @@ module.exports = async function (callback) {
         const bob = accounts[1];
         const minAmount = web3.utils.toWei("100", "ether");
 
-        const sf = new SuperfluidSDK.Framework({version: "preview-20200928", web3Provider: web3.currentProvider });
+        const sf = new SuperfluidSDK.Framework({
+            chainId: 5,
+            version: "preview-20200928",
+            web3Provider: web3.currentProvider
+        });
         await sf.initialize();
         const daiAddress = await sf.resolver.get("tokens.fDAI");
         const dai = await sf.contracts.TestToken.at(daiAddress);

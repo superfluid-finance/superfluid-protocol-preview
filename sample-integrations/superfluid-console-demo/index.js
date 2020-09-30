@@ -16,6 +16,7 @@ async function main() {
     console.log("bob", bob);
     const minAmount = web3.utils.toWei("100", "ether");
     const sf = new SuperfluidSDK.Framework({
+        chainId: 5,
         version: "preview-20200928", // This is for using different protocol release
         web3Provider: web3Provider // your web3 provider
     });

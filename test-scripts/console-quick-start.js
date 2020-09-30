@@ -20,6 +20,7 @@ module.exports = async function (callback) {
     const minAmount = web3.utils.toWei("100", "ether");
 
     const sf = new SuperfluidSDK.Framework({
+      chainId: 5,
       version: "preview-20200928",
       web3Provider: web3.currentProvider,
     });

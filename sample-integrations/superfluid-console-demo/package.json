@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@superfluid-finance/ethereum-contracts": "0.1.0-preview-20200928",
+    "@superfluid-finance/ethereum-contracts": "0.1.0-preview-20200928-fix1",
     "@truffle/contract": "^4.2.23",
     "@truffle/hdwallet-provider": "^1.1.0",
     "dotenv": "^8.2.0"
