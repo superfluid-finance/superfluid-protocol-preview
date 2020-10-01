@@ -83,6 +83,7 @@ async function main() {
       "Bob net flow: ",
       (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString()
     );
+    hasExistingFlow = false;
   }
 
   if (!hasExistingFlow) {
