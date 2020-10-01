@@ -3,6 +3,12 @@ const Web3 = require("web3");
 const SuperfluidSDK = require("@superfluid-finance/ethereum-contracts");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
+if (!process.env.GOERLI_MNEMONIC ||
+    !process.env.GOERLI_PROVIDER_URL) {
+  console.error("add GOERLI_MNEMONIC and GOERLI_PROVIDER_URL to your .env file");
+  process.exit(1);
+}
+
 async function main() {
   const web3Provider = new HDWalletProvider(
     process.env.GOERLI_MNEMONIC,
@@ -10,11 +16,7 @@ async function main() {
   );
   const web3 = new Web3(web3Provider);
   const accounts = web3Provider.addresses;
-  const admin = accounts[0];
-  const bob = accounts[1];
-  console.log("admin", admin);
-  console.log("bob", bob);
-  const minAmount = web3.utils.toWei("100", "ether");
+  const minAmount = web3.utils.toBN(web3.utils.toWei("100", "ether"));
   const sf = new SuperfluidSDK.Framework({
     chainId: 5,
     version: process.env.RELEASE_VERSION || "preview-20200928", // This is for using different protocol release
@@ -28,10 +30,14 @@ async function main() {
   const daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress);
   console.log("daix address", daix.address);
 
+  const admin = accounts[0];
+  const bob = accounts[1];
+  const adminBalance = web3.utils.toBN(await daix.balanceOf(admin));
+  console.log("admin", admin, adminBalance.toString());
+  console.log("bob", bob);
+
   // minting
-  if (
-    web3.utils.toBN(await daix.balanceOf(admin)).lt(web3.utils.toBN(minAmount))
-  ) {
+  if (adminBalance.lt(minAmount.div(web3.utils.toBN(2)))) {
     console.log("Minting and upgrading...");
     await dai.mint(admin, minAmount, { from: admin });
     await dai.approve(daix.address, minAmount, { from: admin });
