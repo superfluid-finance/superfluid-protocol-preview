@@ -135,7 +135,7 @@ contract LotterySuperApp is Ownable, ISuperApp {
         uint playerIndex = _playerIndices[player] - 1;
         address lastPlayer = _players[_players.length - 1];
         _players[playerIndex] = lastPlayer;
-        delete _players[_players.length - 1];
+        _players.pop();
         _playerIndices[player] = 0;
 
         return _draw(ctx);
@@ -261,8 +261,8 @@ contract LotterySuperApp is Ownable, ISuperApp {
         returns (bytes memory cbdata)
     {
         // According to the app basic law, we should never revert in a termination callback
-        if (!_isSameToken(superToken) || !_isCFAv1(agreementClass)) return abi.encode(false);
-        return abi.encode(true);
+        if (!_isSameToken(superToken) || !_isCFAv1(agreementClass)) return abi.encode(true);
+        return abi.encode(false);
     }
 
     ///
