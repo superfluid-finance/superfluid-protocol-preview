@@ -1,5 +1,5 @@
 {
-  "name": "@project/react-app",
+  "name": "superapp-demo-ui",
   "version": "1.0.0",
   "homepage": "./",
   "browserslist": {
@@ -15,10 +15,11 @@
     ]
   },
   "dependencies": {
-    "@project/contracts": "^1.0.0",
     "@apollo/react-hooks": "^3.1.5",
+    "@decentral.ee/web3-helpers": "^0.3.2",
     "@ethersproject/contracts": "^5.0.1",
     "@ethersproject/providers": "^5.0.4",
+    "@superfluid-finance/ethereum-contracts": "0.1.0-preview-20200928-fix3",
     "@testing-library/dom": "^6.12.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
