@@ -16,6 +16,8 @@
     "@openzeppelin/test-helpers": "^0.5.6",
     "@superfluid-finance/ethereum-contracts": "0.1.0-preview-20200928-fix3",
     "@truffle/contract": "^4.2.23",
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "dotenv": "^8.2.0",
     "truffle": "^5.1.46"
   }
 }
