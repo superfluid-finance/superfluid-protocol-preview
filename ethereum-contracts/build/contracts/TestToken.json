@@ -324,7 +324,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-30T18:18:27.110Z",
+  "updatedAt": "2020-10-02T14:34:18.652Z",
   "devdoc": {
     "details": "Test ERC20 token that allows any one mint new tokens.",
     "kind": "dev",

@@ -35,7 +35,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-30T18:18:27.111Z",
+  "updatedAt": "2020-10-02T14:34:18.653Z",
   "devdoc": {
     "details": "Implements delegation of calls to other contracts, with proper forwarding of return values and bubbling of failures. It defines a fallback function that delegates all calls to the implementation.",
     "kind": "dev",
