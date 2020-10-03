@@ -780,7 +780,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-30T18:18:27.032Z",
+  "updatedAt": "2020-10-02T14:34:18.573Z",
   "devdoc": {
     "author": "Superfluid Notes:   - A publisher can create as many as indeces as possibily identifiable with `indexId`.     - `indexId` is deliberately limited to 32 bits, to avoid the chance for sha-3 collision.       Despite knowing sha-3 collision is only theoratical.   - A publisher can create subscription to an index for any subscriber.   - A subscription consists of:     - The index it subscribes to.     - Number of units subscribed.   - An index consists of:     - Current value as `uint128 indexValue`.     - Total units of the approved subscriptions as `uint128 totalUnitsApproved`.     - Total units of the non approved subscription as `uint128 totalUnitsPending`.   - A publisher can update index with new value that doesn't decrease.   - A publisher can update subscription with any number of units.   - A publisher or a subscriber can delete subscription and reset units to zero.   - A subscriber must approve the index in order to receive distributions from the publisher     each time the index is updated.     - The amount distributed is $$\\Delta{index} * units$$   - Distributions to a non approved subscription stays in the publisher's deposit until:     - the subscriber approve the subscription (side effect),     - the publisher update the subscription (side effect),     - the subscriber delete the subscription even if it is never approved (side effect),     - or the subscriber can explicitly claim them.",
     "kind": "dev",

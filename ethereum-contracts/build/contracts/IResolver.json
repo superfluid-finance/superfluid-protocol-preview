@@ -33,7 +33,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-30T18:18:27.035Z",
+  "updatedAt": "2020-10-02T14:34:18.576Z",
   "devdoc": {
     "author": "Superfluid",
     "details": "Abstraction for a address resolver contract",

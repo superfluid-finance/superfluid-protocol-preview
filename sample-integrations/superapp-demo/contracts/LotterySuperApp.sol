@@ -110,14 +110,16 @@ contract LotterySuperApp is Ownable, ISuperApp {
         (,int96 flowRate,,) = IConstantFlowAgreementV1(agreementClass).getFlowByID(_acceptedToken, agreementId);
         require(flowRate >= _MINIMUM_FLOW_RATE, _ERR_STR_LOW_FLOW_RATE);
 
-        // charge one ticket
-        tickets[player]--; 
-
         // arrange players list
         if (_playerIndices[player] == 0) {
             _players.push(player);
             _playerIndices[player] = _players.length;
+        } else {
+            revert("LotterySuperApp: Already in the game");
         }
+
+        // charge one ticket
+        tickets[player]--; 
 
         return _draw(ctx);
     }
@@ -132,11 +134,18 @@ contract LotterySuperApp is Ownable, ISuperApp {
         (,,address player,,) = _host.decodeCtx(ctx);
 
         // arrange players list
-        uint playerIndex = _playerIndices[player] - 1;
-        address lastPlayer = _players[_players.length - 1];
-        _players[playerIndex] = lastPlayer;
-        _players.pop();
-        _playerIndices[player] = 0;
+        if (_players.length > 1) {
+            uint playerIndex = _playerIndices[player] - 1;
+            _playerIndices[player] = 0;
+            address lastPlayer = _players[_players.length - 1];
+            _players[playerIndex] = lastPlayer;
+            _players.pop();
+            _playerIndices[lastPlayer] = playerIndex + 1;
+        } else {
+            assert(_players.length == 1);
+            _playerIndices[player] = 0;
+            _players.pop();
+        }
 
         return _draw(ctx);
     }
@@ -151,11 +160,15 @@ contract LotterySuperApp is Ownable, ISuperApp {
         address oldWinner = _winner;
 
         // rand() adaptation from: https://ethereum.stackexchange.com/questions/72940/solidity-how-do-i-generate-a-random-address
-        _winner = _players[
-            uint(keccak256(abi.encodePacked(_players.length, blockhash(block.number))))
-            %
-            _players.length
-        ];
+        if ( _players.length > 0) {
+            _winner = _players[
+                uint(keccak256(abi.encodePacked(_players.length, blockhash(block.number))))
+                %
+                _players.length
+            ];
+        } else {
+            _winner = address(0);
+        }
 
         newCtx = ctx;
 
@@ -175,17 +188,19 @@ contract LotterySuperApp is Ownable, ISuperApp {
         }
 
         // create flow to new winner
-        (newCtx, ) = _host.callAgreementWithContext(
-            _cfa,
-            abi.encodeWithSelector(
-                _cfa.createFlow.selector,
-                _acceptedToken,
-                _winner,
-                _cfa.getNetFlow(_acceptedToken, address(this)),
-                new bytes(0)
-            ),
-            newCtx
-        );
+        if (_winner != address(0)) {
+            (newCtx, ) = _host.callAgreementWithContext(
+                _cfa,
+                abi.encodeWithSelector(
+                    _cfa.createFlow.selector,
+                    _acceptedToken,
+                    _winner,
+                    _cfa.getNetFlow(_acceptedToken, address(this)),
+                    new bytes(0)
+                ),
+                newCtx
+            );
+        }
 
         emit WinnerChanged(_winner);
     }
