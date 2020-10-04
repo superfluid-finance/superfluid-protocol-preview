@@ -121,7 +121,7 @@ contract LotterySuperApp is Ownable, ISuperApp {
         // charge one ticket
         tickets[player]--; 
 
-        return _draw(ctx);
+        return _draw(player, ctx);
     }
 
     /// @dev Play the game
@@ -146,11 +146,12 @@ contract LotterySuperApp is Ownable, ISuperApp {
             _players.pop();
         }
 
-        return _draw(ctx);
+        return _draw(player, ctx);
     }
 
     // @dev Make a new draw
     function _draw(
+        address player,
         bytes calldata ctx
     )
         private
@@ -164,8 +165,10 @@ contract LotterySuperApp is Ownable, ISuperApp {
                 // not the most perfect randomness source
                 // DO NOT USE blockhash(block.number) though
                 uint(keccak256(abi.encodePacked(
+                    player,
                     _players.length,
-                    blockhash(block.number - 1)
+                    blockhash(block.number - 1),
+                    block.timestamp // this is where could be manipulated by miner...
                 )))
                 %
                 _players.length

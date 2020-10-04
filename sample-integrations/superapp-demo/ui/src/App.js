@@ -23,7 +23,7 @@ import { web3Modal, logoutOfWeb3Modal } from "./utils/web3Modal";
 import GET_TRANSFERS from "./graphql/subgraph";
 const TruffleContract = require("@truffle/contract");
 
-const APP_ADDRESS = "0xB5fFd59Ebe42ba4369dDF06243f1631f596535D2"; // previous one, with 5 plyaers in "0x358495191298BC25f5c3bD0f3d64C0CC17aC6f2E";
+const APP_ADDRESS = "0x4690Fa515cfEC6afb03bC5B80FA0De2BD9e1103b"; // previous one, with 5 plyaers in "0x358495191298BC25f5c3bD0f3d64C0CC17aC6f2E";
 const MINIMUM_GAME_FLOW_RATE = "3858024691358";
 const LotterySuperApp = TruffleContract(require("./LotterySuperApp.json"));
 
