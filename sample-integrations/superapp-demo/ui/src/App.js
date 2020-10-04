@@ -42,15 +42,15 @@ function WalletButton({ provider, userAddress, loadWeb3Modal }) {
         }
       }}
     >
-      {
-        !provider ?
-        "Connect Wallet" :
+      {!provider ? (
+        "Connect Wallet"
+      ) : (
         <>
-            <span>"Disconnect Wallet"</span>
-            <br/>
-            <small>{userAddress.slice(0,10)+"..."}</small>
+          <span>"Disconnect Wallet"</span>
+          <br />
+          <small>{userAddress.slice(0, 10) + "..."}</small>
         </>
-      }
+      )}
     </Button>
   );
 }
@@ -213,14 +213,13 @@ function App() {
   }
 
   async function leaveLottery() {
-    await sf.host
-      .callAgreement(
-        sf.agreements.cfa.address,
-        sf.agreements.cfa.contract.methods
-          .deleteFlow(daix.address, userAddress, app.address, "0x")
-          .encodeABI(),
-        { from: userAddress }
-      );
+    await sf.host.callAgreement(
+      sf.agreements.cfa.address,
+      sf.agreements.cfa.contract.methods
+        .deleteFlow(daix.address, userAddress, app.address, "0x")
+        .encodeABI(),
+      { from: userAddress }
+    );
     await checkWinner();
   }
 
@@ -243,7 +242,7 @@ function App() {
       console.log("accountsChanged", accounts);
       setUserAddress(accounts[0]);
       checkWinner();
-    });   
+    });
 
     sf = new SuperfluidSDK.Framework({
       chainId: 5,
@@ -354,9 +353,7 @@ function App() {
         setPlayerList(newList);
       }
     })();
-  }, [
-    lastCheckpoint
-  ]);
+  }, [lastCheckpoint]);
 
   return (
     <Body>
@@ -365,7 +362,11 @@ function App() {
           <Div100>
             <h2>Glow lottery, built on Superfluid Flows!</h2>
           </Div100>
-          <WalletButton userAddress={userAddress} provider={provider} loadWeb3Modal={loadWeb3Modal} />
+          <WalletButton
+            userAddress={userAddress}
+            provider={provider}
+            loadWeb3Modal={loadWeb3Modal}
+          />
         </Header>
         {/*<Image src={logo} alt="react-logo" />*/}
         {/* Remove the "hidden" prop and open the JavaScript console in the browser to see what this function does */}
@@ -409,10 +410,10 @@ function App() {
           <Box></Box>
           <ShrinkBox>
             <Button onClick={() => mintDAI()}>
-              1. Mint some DAI {showTick(daiBalance !== 0)}
+              1. Mint some DAI {showTick(daiBalance >= 2)}
             </Button>
             <Button onClick={() => approveDAI()}>
-              2. Approve DAI {showTick(daiApproved !== 0)}
+              2. Approve DAI {showTick(daiApproved > 0)}
             </Button>
             <Button onClick={() => joinLottery()} disabled={joinedLottery}>
               3. Join Lottery

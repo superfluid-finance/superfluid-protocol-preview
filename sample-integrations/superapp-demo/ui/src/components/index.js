@@ -17,6 +17,7 @@ export const Body = styled.body`
   font-size: 20px;
   justify-content: center;
   background-color: #000;
+  padding-bottom: 18px;
 `;
 
 export const BoxContainer = styled.div`
