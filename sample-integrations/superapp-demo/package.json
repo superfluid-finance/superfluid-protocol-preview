@@ -7,7 +7,7 @@
     "build": "truffle compile --all",
     "pretest": "mkdir -p build/contracts;cp ../../ethereum-contracts/build/contracts/* build/contracts/",
     "test": "truffle test",
-    "deploy": "RELEASE_VERSION=preview-20200928 npx truffle --network goerli exec scripts/deploy.js"
+    "deploy": "npm run build && RELEASE_VERSION=preview-20200928 npx truffle --network goerli exec scripts/deploy.js"
   },
   "author": "Superfluid",
   "license": "MIT",

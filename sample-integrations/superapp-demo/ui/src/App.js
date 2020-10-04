@@ -23,7 +23,7 @@ import { web3Modal, logoutOfWeb3Modal } from "./utils/web3Modal";
 import GET_TRANSFERS from "./graphql/subgraph";
 const TruffleContract = require("@truffle/contract");
 
-const APP_ADDRESS = "0x08b8D27547c7c538a9d1fFd1eCE5D8D0E34Bc6Ec"; // previous one, with 5 plyaers in "0x358495191298BC25f5c3bD0f3d64C0CC17aC6f2E";
+const APP_ADDRESS = "0xB5fFd59Ebe42ba4369dDF06243f1631f596535D2"; // previous one, with 5 plyaers in "0x358495191298BC25f5c3bD0f3d64C0CC17aC6f2E";
 const MINIMUM_GAME_FLOW_RATE = "3858024691358";
 const LotterySuperApp = TruffleContract(require("./LotterySuperApp.json"));
 
@@ -31,7 +31,7 @@ const { wad4human } = require("@decentral.ee/web3-helpers");
 
 const SuperfluidSDK = require("@superfluid-finance/ethereum-contracts");
 
-function WalletButton({ provider, loadWeb3Modal }) {
+function WalletButton({ provider, userAddress, loadWeb3Modal }) {
   return (
     <Button
       onClick={() => {
@@ -42,7 +42,15 @@ function WalletButton({ provider, loadWeb3Modal }) {
         }
       }}
     >
-      {!provider ? "Connect Wallet" : "Disconnect Wallet"}
+      {
+        !provider ?
+        "Connect Wallet" :
+        <>
+            <span>"Disconnect Wallet"</span>
+            <br/>
+            <small>{userAddress.slice(0,10)+"..."}</small>
+        </>
+      }
     </Button>
   );
 }
@@ -51,14 +59,14 @@ function flowForHumans(flow) {
 }
 function TableOfPlayers({ playerList, winner }) {
   var items = [];
-  console.log("this is playerList");
-  console.log(playerList);
+  //console.log("this is playerList");
+  //console.log(playerList);
   if (playerList.length > 0) {
-    console.log("playerList definitely >0");
+    //console.log("playerList definitely >0");
     var i = 0;
     for (const value of playerList) {
       const { address, flowRate } = value;
-      console.log("address: ", address, " netFlow: ", flowRate);
+      //console.log("address: ", address, " netFlow: ", flowRate);
       var item = (
         <li key={i++}>
           {address}{" "}
@@ -98,13 +106,13 @@ function App() {
   const [daiApproved, setDAIapproved] = useState(0);
   const [joinedLottery, setJoinedLottery] = useState();
   const [userAddress, setUserAddress] = useState("");
-  const [winnerAddress, setWinnerAddress] = useState("NOBODY");
-  const [winnerFlowRate, setWinnerFlowRate] = useState("sticazzi");
+  const [winnerAddress, setWinnerAddress] = useState("");
   const [daiBalance, setDaiBalance] = useState(0);
   const [daixBalance, setDaixBalance] = useState(0);
   const [daixBalanceFake, setDaixBalanceFake] = useState(0);
   const [userNetFlow, setUserNetFlow] = useState(0);
   const [playerList, setPlayerList] = useState([]);
+  const [lastCheckpoint, setLastCheckpoint] = useState([]);
 
   async function mintDAI(amount = 100) {
     //mint some dai here!  100 default amount
@@ -200,9 +208,8 @@ function App() {
         ]
       ];
     console.log("this is the batchcall: ", call);
-    await sf.host.batchCall(call, { from: userAddress }).then(async p => {
-      setWinnerAddress((await app.currentWinner.call()).player);
-    });
+    await sf.host.batchCall(call, { from: userAddress });
+    await checkWinner();
   }
 
   async function leaveLottery() {
@@ -213,33 +220,30 @@ function App() {
           .deleteFlow(daix.address, userAddress, app.address, "0x")
           .encodeABI(),
         { from: userAddress }
-      )
-      .then(async p => {
-        setWinnerAddress((await app.currentWinner.call()).player);
-      });
+      );
+    await checkWinner();
   }
 
-  const checkWinner = useCallback(async () => {
+  const checkWinner = async () => {
+    console.log("Checking winner...");
     await app.currentWinner.call().then(async p => {
+      console.log("New winner", p.player);
       setWinnerAddress(p.player);
-      setWinnerFlowRate(
-        (await sf.agreements.cfa.getNetFlow.call(
-          daix.address,
-          winnerAddress
-        )).toString()
-      );
+      setLastCheckpoint(Date.now());
       setDaixBalance(wad4human(await daix.balanceOf.call(userAddress)));
       setDaixBalanceFake(wad4human(await daix.balanceOf.call(userAddress)));
-      setTimeout(function() {
-        console.log("checking again, last winner: ", p.player);
-        return checkWinner();
-      }, 80000);
     });
-  }, [userAddress, winnerAddress]);
+  };
 
   /* Open wallet selection modal. */
   const loadWeb3Modal = useCallback(async () => {
     const newProvider = await web3Modal.connect();
+
+    newProvider.on("accountsChanged", accounts => {
+      console.log("accountsChanged", accounts);
+      setUserAddress(accounts[0]);
+      checkWinner();
+    });   
 
     sf = new SuperfluidSDK.Framework({
       chainId: 5,
@@ -256,10 +260,17 @@ function App() {
     LotterySuperApp.setProvider(newProvider);
     app = await LotterySuperApp.at(APP_ADDRESS);
 
+    global.web3 = sf.web3;
+
     const accounts = await sf.web3.eth.getAccounts();
     setUserAddress(accounts[0]);
+
     setProvider(new Web3Provider(newProvider));
-    global.web3 = sf.web3;
+
+    setTimeout(function() {
+      return checkWinner();
+    }, 10000);
+    checkWinner();
   }, []);
 
   /* If user has loaded a wallet before, load it automatically. */
@@ -270,8 +281,8 @@ function App() {
     // ############################ here you do all the data retrieval: please pull all the current players in the lottery and push them using addPlayer({address, netFlow})
   }, [loadWeb3Modal]);
   function increaseBalance(value) {
-    console.log("netflow: ", userNetFlow / 1e18);
-    console.log("daixBalanceFake: ", daixBalanceFake);
+    //console.log("netflow: ", userNetFlow / 1e18);
+    //console.log("daixBalanceFake: ", daixBalanceFake);
     setDaixBalanceFake(
       Number(daixBalanceFake) + (Number(userNetFlow) * 5) / 1e18
     );
@@ -285,6 +296,7 @@ function App() {
     ).filter(i => i.args.flowRate.toString() != "0");
   }
   useEffect(() => {
+    console.log("Refresh players list");
     (async () => {
       if (provider) {
         setDaiBalance(wad4human(await dai.balanceOf.call(userAddress)));
@@ -315,12 +327,11 @@ function App() {
             app.address
           )).timestamp > 0
         );
-        setWinnerAddress((await app.currentWinner.call()).player);
-        var winnerFlow = (await sf.agreements.cfa.getNetFlow.call(
+        var winnerFlow = (await sf.agreements.cfa.getFlow.call(
           daix.address,
+          app.address,
           winnerAddress
-        )).toString();
-        setWinnerFlowRate(winnerFlow);
+        )).flowRate.toString();
         var newList = getLatestFlows(
           await sf.agreements.cfa.getPastEvents("FlowUpdated", {
             fromBlock: 0,
@@ -333,7 +344,7 @@ function App() {
             f.args.sender === winnerAddress
               ? winnerFlow
               : f.args.flowRate.toString();
-          console.log("flowrate in mapping ", flowRate);
+          //console.log("flowrate in mapping ", flowRate);
           return {
             address: f.args.sender,
             flowRate
@@ -341,16 +352,10 @@ function App() {
         });
         console.log(newList);
         setPlayerList(newList);
-        checkWinner();
       }
     })();
   }, [
-    provider,
-    userAddress,
-    winnerAddress,
-    userNetFlow,
-    winnerFlowRate,
-    checkWinner
+    lastCheckpoint
   ]);
 
   return (
@@ -360,7 +365,7 @@ function App() {
           <Div100>
             <h2>Glow lottery, built on Superfluid Flows!</h2>
           </Div100>
-          <WalletButton provider={provider} loadWeb3Modal={loadWeb3Modal} />
+          <WalletButton userAddress={userAddress} provider={provider} loadWeb3Modal={loadWeb3Modal} />
         </Header>
         {/*<Image src={logo} alt="react-logo" />*/}
         {/* Remove the "hidden" prop and open the JavaScript console in the browser to see what this function does */}
