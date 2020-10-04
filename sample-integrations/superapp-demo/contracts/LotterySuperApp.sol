@@ -110,7 +110,7 @@ contract LotterySuperApp is Ownable, ISuperApp {
         (,int96 flowRate,,) = IConstantFlowAgreementV1(agreementClass).getFlowByID(_acceptedToken, agreementId);
         require(flowRate >= _MINIMUM_FLOW_RATE, _ERR_STR_LOW_FLOW_RATE);
 
-        // arrange players list
+        // add new player to the list
         if (_playerIndices[player] == 0) {
             _players.push(player);
             _playerIndices[player] = _players.length;
@@ -133,16 +133,15 @@ contract LotterySuperApp is Ownable, ISuperApp {
     {
         (,,address player,,) = _host.decodeCtx(ctx);
 
-        // arrange players list
-        if (_players.length > 1) {
+        // remove player from the list
+        address lastPlayer = _players[_players.length - 1];
+        if (lastPlayer != player) {
             uint playerIndex = _playerIndices[player] - 1;
             _playerIndices[player] = 0;
-            address lastPlayer = _players[_players.length - 1];
             _players[playerIndex] = lastPlayer;
             _players.pop();
             _playerIndices[lastPlayer] = playerIndex + 1;
         } else {
-            assert(_players.length == 1);
             _playerIndices[player] = 0;
             _players.pop();
         }
@@ -159,10 +158,15 @@ contract LotterySuperApp is Ownable, ISuperApp {
     {
         address oldWinner = _winner;
 
-        // rand() adaptation from: https://ethereum.stackexchange.com/questions/72940/solidity-how-do-i-generate-a-random-address
-        if ( _players.length > 0) {
+        if (_players.length > 0) {
+            // use block hash
             _winner = _players[
-                uint(keccak256(abi.encodePacked(_players.length, blockhash(block.number))))
+                // not the most perfect randomness source
+                // DO NOT USE blockhash(block.number) though
+                uint(keccak256(abi.encodePacked(
+                    _players.length,
+                    blockhash(block.number - 1)
+                )))
                 %
                 _players.length
             ];

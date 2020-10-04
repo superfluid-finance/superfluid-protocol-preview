@@ -4,9 +4,10 @@
   "description": "SuperApp demo - a simple money stream lottery",
   "main": "scripts/demo.js",
   "scripts": {
-    "build": "truffle build",
+    "build": "truffle compile --all",
     "pretest": "mkdir -p build/contracts;cp ../../ethereum-contracts/build/contracts/* build/contracts/",
-    "test": "truffle test"
+    "test": "truffle test",
+    "deploy": "RELEASE_VERSION=preview-20200928 npx truffle --network goerli exec scripts/deploy.js"
   },
   "author": "Superfluid",
   "license": "MIT",
