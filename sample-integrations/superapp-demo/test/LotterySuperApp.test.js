@@ -334,7 +334,7 @@ contract("LotterySuperApp", accounts => {
         );
     })
 
-    it.only("Test randomness", async () => {
+    it("Test randomness", async () => {
         const counters = {};
         counters[carol] = { name: "carol", count: 0 };
         counters[bob] = { name: "bob", count: 0 };
