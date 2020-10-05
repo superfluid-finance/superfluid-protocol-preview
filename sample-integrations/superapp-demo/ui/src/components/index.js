@@ -107,6 +107,9 @@ export const BottomTable = styled.div`
   min-height: 40vh;
   background: #000;
   padding: 14px;
+  h3 {
+    padding-left: 42px;
+  }
 `;
 
 export const Left = styled.span`

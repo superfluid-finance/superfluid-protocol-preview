@@ -266,7 +266,7 @@ function App() {
 
     setProvider(new Web3Provider(newProvider));
 
-    setTimeout(function() {
+    setInterval(function() {
       return checkWinner();
     }, 10000);
     checkWinner();
@@ -282,9 +282,12 @@ function App() {
   function increaseBalance(value) {
     //console.log("netflow: ", userNetFlow / 1e18);
     //console.log("daixBalanceFake: ", daixBalanceFake);
-    setDaixBalanceFake(
-      Number(daixBalanceFake) + (Number(userNetFlow) * 5) / 1e18
-    );
+    var newBalance = Number(daixBalanceFake) + (Number(userNetFlow) * 5) / 1e18;
+    if (
+      (userNetFlow < 0 && newBalance < daixBalanceFake) ||
+      (userNetFlow > 0 && newBalance > daixBalanceFake)
+    )
+      setDaixBalanceFake(newBalance);
   }
   function getLatestFlows(flows) {
     return Object.values(
@@ -315,6 +318,8 @@ function App() {
           userAddress
         )).toString();
         console.log("user address: ", userAddress);
+        console.log("user DAI balance: ", daiBalance);
+        console.log("user DAIx balance: ", daixBalance);
         console.log("winner address: ", winnerAddress);
         console.log("Flow in useEffect() = ", flow);
         setUserNetFlow(flow);
@@ -353,14 +358,14 @@ function App() {
         setPlayerList(newList);
       }
     })();
-  }, [lastCheckpoint]);
+  }, [lastCheckpoint, provider, userAddress, userNetFlow, winnerAddress]);
 
   return (
     <Body>
       <div>
         <Header>
           <Div100>
-            <h2>Glow lottery, built on Superfluid Flows!</h2>
+            <h2>Flow lottery - Built on Superfluid</h2>
           </Div100>
           <WalletButton
             userAddress={userAddress}
@@ -410,10 +415,10 @@ function App() {
           <Box></Box>
           <ShrinkBox>
             <Button onClick={() => mintDAI()}>
-              1. Mint some DAI {showTick(daiBalance >= 2)}
+              1. Mint some DAI {showTick(daiBalance >= 2 && daiBalance !== "0")}
             </Button>
             <Button onClick={() => approveDAI()}>
-              2. Approve DAI {showTick(daiApproved > 0)}
+              2. Approve DAI {showTick(daiApproved > 0 && daiApproved !== "0")}
             </Button>
             <Button onClick={() => joinLottery()} disabled={joinedLottery}>
               3. Join Lottery
