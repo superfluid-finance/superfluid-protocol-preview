@@ -134,7 +134,7 @@ function App() {
       )
       .then(async i =>
         setDAIapproved(
-          wad4human(await dai.allowance.call(userAddress, app.address))
+          wad4human(await dai.allowance.call(userAddress, daix.address))
         )
       );
   }
@@ -305,20 +305,15 @@ function App() {
         setDaixBalance(wad4human(await daix.balanceOf.call(userAddress)));
         setDaixBalanceFake(wad4human(await daix.balanceOf.call(userAddress)));
         setDAIapproved(
-          wad4human(await dai.allowance.call(userAddress, app.address))
+          wad4human(await dai.allowance.call(userAddress, daix.address))
         );
-        if (
-          (await dai.allowance.call(daix.address, userAddress)).toString() !==
-          "0"
-        ) {
-          setDAIapproved(true);
-        }
         const flow = (await sf.agreements.cfa.getNetFlow.call(
           daix.address,
           userAddress
         )).toString();
         console.log("user address: ", userAddress);
         console.log("user DAI balance: ", daiBalance);
+        console.log("user DAI allowance: ", daiApproved);
         console.log("user DAIx balance: ", daixBalance);
         console.log("winner address: ", winnerAddress);
         console.log("Flow in useEffect() = ", flow);
@@ -415,10 +410,14 @@ function App() {
           <Box></Box>
           <ShrinkBox>
             <Button onClick={() => mintDAI()}>
-              1. Mint some DAI {showTick(daiBalance >= 2 && daiBalance !== "0")}
+              1. Mint some DAI{" "}
+              {showTick(
+                (daiBalance >= 2 && daiBalance !== "0") || daixBalance > 2
+              )}
             </Button>
             <Button onClick={() => approveDAI()}>
-              2. Approve DAI {showTick(daiApproved > 0 && daiApproved !== "0")}
+              2. Approve DAI{" "}
+              {showTick(Number(daiApproved) > 0 && daiApproved !== "0")}
             </Button>
             <Button onClick={() => joinLottery()} disabled={joinedLottery}>
               3. Join Lottery

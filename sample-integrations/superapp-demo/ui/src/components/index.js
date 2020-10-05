@@ -21,7 +21,7 @@ export const Body = styled.body`
 `;
 
 export const BoxContainer = styled.div`
-  min-height: 70vh;
+  min-height: 60vh;
   background-size: 70vh; /* You must set a specified height */
   background-position-x: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
