@@ -19,6 +19,8 @@ import {
   XL
 } from "./components";
 import { web3Modal, logoutOfWeb3Modal } from "./utils/web3Modal";
+import { TableOfPlayers, TableOfWinners } from "./components/BottomTables";
+import { flowForHumans, showTick } from "./utils/utils";
 
 import GET_TRANSFERS from "./graphql/subgraph";
 const TruffleContract = require("@truffle/contract");
@@ -53,81 +55,6 @@ function WalletButton({ provider, userAddress, loadWeb3Modal }) {
       )}
     </Button>
   );
-}
-function flowForHumans(flow) {
-  return (flow * ((3600 * 24 * 30) / 1e18)).toFixed(2) + " / month";
-}
-function TableOfWinners({ winnerList }) {
-  var items = [];
-  console.log(winnerList);
-  if (winnerList.length > 0) {
-    var i = 0;
-    for (const value of winnerList) {
-      const { address, fromBlock, toBlock, flowRate } = value;
-      var item = (
-        <tr key={i++}>
-          <td>{address}</td>
-          <td>
-            {toBlock - fromBlock}
-            {" minutes"}
-          </td>
-          <td>{flowForHumans(flowRate)}</td>
-          <td>{wad4human(flowRate * (toBlock - fromBlock))}</td>
-        </tr>
-      );
-      items.unshift(item);
-    }
-  }
-  return (
-    <BottomTable>
-      <h3>Winners</h3>
-
-      <table>
-        <th>{"Address"}</th>
-        <th>{"Winning for"}</th>
-        <th>{"FlowRate"}</th>
-        <th>{"Total Won"}</th>
-        {items}
-      </table>
-    </BottomTable>
-  );
-}
-function TableOfPlayers({ playerList, winner }) {
-  var items = [];
-  //console.log("this is playerList");
-  //console.log(playerList);
-  if (playerList.length > 0) {
-    //console.log("playerList definitely >0");
-    var i = 0;
-    for (const value of playerList) {
-      const { address, flowRate } = value;
-      //console.log("address: ", address, " netFlow: ", flowRate);
-      var item = (
-        <li key={i++}>
-          {address}{" "}
-          {address === winner ? (
-            <Span color={"green"}>+{flowForHumans(flowRate)}</Span>
-          ) : (
-            <Span color={"red"}>-{flowForHumans(flowRate)}</Span>
-          )}{" "}
-          {address === winner && <XL>👑</XL>}
-        </li>
-      );
-      if (address === winner) items.unshift(item);
-      else items.push(item);
-    }
-  }
-  return (
-    <BottomTable>
-      <h3>Active Players</h3>
-      <ul>{items}</ul>
-    </BottomTable>
-  );
-}
-
-function showTick(bool) {
-  if (typeof bool === "undefined") return "";
-  if (bool) return "✔️";
 }
 
 let sf;
@@ -246,6 +173,45 @@ function App() {
     console.log("this is the batchcall: ", call);
     await sf.host.batchCall(call, { from: userAddress });
     await checkWinner();
+
+    await sf.host.batchCall(
+      [
+        [
+          2, // upgrade 100 daix to play the game
+          daix.address,
+          sf.web3.eth.abi.encodeParameters(
+            ["uint256"],
+            [sf.web3.utils.toWei("100", "ether").toString()]
+          )
+        ],
+        [
+          0, // approve the ticket fee
+          daix.address,
+          sf.web3.eth.abi.encodeParameters(
+            ["address", "uint256"],
+            [APP_ADDRESS, sf.web3.utils.toWei("1", "ether").toString()]
+          )
+        ],
+        [
+          5, // callAppAction to participate
+          app.address,
+          app.contract.methods.participate("0x").encodeABI()
+        ],
+        [
+          4, // create constant flow (10/mo)
+          sf.agreements.cfa.address,
+          sf.agreements.cfa.contract.methods
+            .createFlow(
+              daix.address,
+              app.address,
+              MINIMUM_GAME_FLOW_RATE.toString(),
+              "0x"
+            )
+            .encodeABI()
+        ]
+      ],
+      { from: userAddress }
+    );
   }
 
   async function leaveLottery() {
@@ -374,7 +340,8 @@ function App() {
               receiver: app.address
             }
           })
-        ).map(f => {
+        );
+        newList = newList.map(f => {
           var flowRate =
             f.args.sender === winnerAddress
               ? winnerFlow
@@ -385,8 +352,6 @@ function App() {
             flowRate
           };
         });
-        console.log(newList);
-        setPlayerList(newList);
         var newWinnerLog = await sf.agreements.cfa.getPastEvents(
           "FlowUpdated",
           {
@@ -403,28 +368,46 @@ function App() {
             flowRate: f.args.flowRate.toString()
           };
         });
+
         var pluckedWinnerLog = [];
         for (var i = 1; i < newWinnerLog.length; i++) {
           if (typeof newWinnerLog[i] !== "undefined") {
             if (newWinnerLog[i].address === newWinnerLog[i - 1].address) {
+              var fromTimestamp = (await sf.web3.eth.getBlock(
+                newWinnerLog[i - 1].blockNumber
+              )).timestamp;
+              var toTimestamp = (await sf.web3.eth.getBlock(
+                newWinnerLog[i].blockNumber
+              )).timestamp;
+              var flowRate = Math.max(
+                newWinnerLog[i].flowRate,
+                newWinnerLog[i - 1].flowRate
+              );
               pluckedWinnerLog.push({
                 address: newWinnerLog[i].address,
-                flowRate: Math.max(
-                  newWinnerLog[i].flowRate,
-                  newWinnerLog[i - 1].flowRate
-                ),
-                fromBlock: (await sf.web3.eth.getBlock(
-                  newWinnerLog[i - 1].blockNumber
-                )).timestamp,
-                toBlock: (await sf.web3.eth.getBlock(
-                  newWinnerLog[i].blockNumber
-                )).timestamp
+                flowRate,
+                fromTimestamp,
+                toTimestamp,
+                duration: toTimestamp - fromTimestamp,
+                total: flowRate * (toTimestamp - fromTimestamp)
               });
             }
           }
         }
-        console.log("pluckedWinnerLog: ", pluckedWinnerLog);
+        for (var player of newList) {
+          player.total = 0;
+          for (var prize of pluckedWinnerLog) {
+            if (
+              String(prize.address).toLowerCase() ===
+              String(player.address).toLowerCase()
+            )
+              player.total += prize.total;
+          }
+        }
+        console.log(newList);
+        console.log(pluckedWinnerLog);
         setWinnerLog(pluckedWinnerLog);
+        setPlayerList(newList);
       }
     })();
   }, [lastCheckpoint, provider, userAddress, userNetFlow, winnerAddress]);
