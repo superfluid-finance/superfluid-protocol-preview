@@ -57,6 +57,41 @@ function WalletButton({ provider, userAddress, loadWeb3Modal }) {
 function flowForHumans(flow) {
   return (flow * ((3600 * 24 * 30) / 1e18)).toFixed(2) + " / month";
 }
+function TableOfWinners({ winnerList }) {
+  var items = [];
+  console.log(winnerList);
+  if (winnerList.length > 0) {
+    var i = 0;
+    for (const value of winnerList) {
+      const { address, fromBlock, toBlock, flowRate } = value;
+      var item = (
+        <tr key={i++}>
+          <td>{address}</td>
+          <td>
+            {toBlock - fromBlock}
+            {" minutes"}
+          </td>
+          <td>{flowForHumans(flowRate)}</td>
+          <td>{wad4human(flowRate * (toBlock - fromBlock))}</td>
+        </tr>
+      );
+      items.unshift(item);
+    }
+  }
+  return (
+    <BottomTable>
+      <h3>Winners</h3>
+
+      <table>
+        <th>{"Address"}</th>
+        <th>{"Winning for"}</th>
+        <th>{"FlowRate"}</th>
+        <th>{"Total Won"}</th>
+        {items}
+      </table>
+    </BottomTable>
+  );
+}
 function TableOfPlayers({ playerList, winner }) {
   var items = [];
   //console.log("this is playerList");
@@ -112,6 +147,7 @@ function App() {
   const [daixBalanceFake, setDaixBalanceFake] = useState(0);
   const [userNetFlow, setUserNetFlow] = useState(0);
   const [playerList, setPlayerList] = useState([]);
+  const [winnerLog, setWinnerLog] = useState([]);
   const [lastCheckpoint, setLastCheckpoint] = useState([]);
 
   async function mintDAI(amount = 100) {
@@ -351,6 +387,44 @@ function App() {
         });
         console.log(newList);
         setPlayerList(newList);
+        var newWinnerLog = await sf.agreements.cfa.getPastEvents(
+          "FlowUpdated",
+          {
+            fromBlock: 0,
+            filter: {
+              sender: app.address
+            }
+          }
+        );
+        newWinnerLog = newWinnerLog.map(f => {
+          return {
+            address: f.args.receiver,
+            blockNumber: f.blockNumber,
+            flowRate: f.args.flowRate.toString()
+          };
+        });
+        var pluckedWinnerLog = [];
+        for (var i = 1; i < newWinnerLog.length; i++) {
+          if (typeof newWinnerLog[i] !== "undefined") {
+            if (newWinnerLog[i].address === newWinnerLog[i - 1].address) {
+              pluckedWinnerLog.push({
+                address: newWinnerLog[i].address,
+                flowRate: Math.max(
+                  newWinnerLog[i].flowRate,
+                  newWinnerLog[i - 1].flowRate
+                ),
+                fromBlock: (await sf.web3.eth.getBlock(
+                  newWinnerLog[i - 1].blockNumber
+                )).timestamp,
+                toBlock: (await sf.web3.eth.getBlock(
+                  newWinnerLog[i].blockNumber
+                )).timestamp
+              });
+            }
+          }
+        }
+        console.log("pluckedWinnerLog: ", pluckedWinnerLog);
+        setWinnerLog(pluckedWinnerLog);
       }
     })();
   }, [lastCheckpoint, provider, userAddress, userNetFlow, winnerAddress]);
@@ -427,7 +501,6 @@ function App() {
             </Button>
           </ShrinkBox>
         </BoxContainer>
-        <TableOfPlayers playerList={playerList} winner={winnerAddress} />
         <Div100>
           <Center>
             <h4>
@@ -438,6 +511,8 @@ function App() {
             </h4>
           </Center>
         </Div100>
+        <TableOfPlayers playerList={playerList} winner={winnerAddress} />
+        <TableOfWinners winnerList={winnerLog} />
       </div>
     </Body>
   );

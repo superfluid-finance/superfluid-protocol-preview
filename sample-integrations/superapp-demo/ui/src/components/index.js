@@ -110,6 +110,9 @@ export const BottomTable = styled.div`
   h3 {
     padding-left: 42px;
   }
+  td {
+    padding: 2px 5px;
+  }
 `;
 
 export const Left = styled.span`
