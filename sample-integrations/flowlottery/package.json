@@ -1,7 +1,7 @@
 {
-  "name": "superapp-demo",
+  "name": "flowlottery-superapp",
   "version": "1.0.0",
-  "description": "SuperApp demo - a simple money stream lottery",
+  "description": "Flow lottery - a superfluid SuperApp demo",
   "main": "scripts/demo.js",
   "scripts": {
     "build": "truffle compile --all",
