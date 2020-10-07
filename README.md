@@ -1,14 +1,17 @@
-# Superfluid Protocol (Preview)
+Superfluid Protocol (Preview)
+=============================
 
 Welcome to the preview version of the Superfluid protocol.
 
-## Ethereum Contracts
+Ethereum Contracts
+==================
 
 The ethereum contracts is published under the `ethereum-contracts` folder.
 
 Currently the core logics are not yet published publicly, but they will be coming very soon!
 
-### Integration
+How to Integrate
+----------------
 
 Install the SDK and its peer dependency:
 
@@ -31,10 +34,26 @@ For more information about the SDK, read [SDK Integration](ethereum-contracts/RE
 
 For more information about the protocol, please visit [docs](https://docs.superfluid.finance/).
 
-## Example Dapps
+Example Integrations
+--------------------
 
-Coming soon...
+## Superfluid Console Demo
 
-# Further Readings
+[This demo](sample-integrations/superfluid-console-demo) show cases how to write a console only app using
+the superfluid SDK.
+
+## Flow Lottery - A Super App Demo
+
+[Flow lottery](sample-integrations/flow-lottery) is a super app which showcases how to write a SuperApp
+that composes agreements into a fun money game.
+
+## Dividend Rights Token
+
+All holders of the tokens could receive distributions in one simple transaction.
+
+(TODO) Documentation upcoming...
+
+Further Readings
+================
 
 To read more about Superfluid Finance and our vision, please visit [our website](https://www.superfluid.finance/).
