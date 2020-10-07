@@ -1,0 +1,24 @@
+{
+  "name": "dividend-rights-token",
+  "version": "1.0.0",
+  "description": "Dividend Rights Token - a superfluid superapp demo",
+  "main": "scripts/demo.js",
+  "scripts": {
+    "build": "truffle compile --all",
+    "pretest": "mkdir -p build/contracts;cp ../../ethereum-contracts/build/contracts/* build/contracts/",
+    "test": "truffle test",
+    "deploy": "npm run build && RELEASE_VERSION=preview-20200928 npx truffle --network goerli exec scripts/deploy.js"
+  },
+  "author": "Superfluid",
+  "license": "MIT",
+  "devDependencies": {
+    "@decentral.ee/web3-helpers": "^0.3.2",
+    "@openzeppelin/contracts": "^3.2.1-solc-0.7",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@superfluid-finance/ethereum-contracts": "0.1.0-preview-20200928-fix6",
+    "@truffle/contract": "^4.2.23",
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.46"
+  }
+}
