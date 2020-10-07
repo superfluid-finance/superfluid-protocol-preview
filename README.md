@@ -44,7 +44,7 @@ the superfluid SDK.
 
 ## Flow Lottery - A Super App Demo
 
-[Flow lottery](sample-integrations/flow-lottery) is a super app which showcases how to write a SuperApp
+[Flow lottery](sample-integrations/flowlottery) is a super app which showcases how to write a SuperApp
 that composes agreements into a fun money game.
 
 ## Dividend Rights Token
