@@ -49,9 +49,7 @@ that composes agreements into a fun money game.
 
 ## Dividend Rights Token
 
-All holders of the tokens could receive distributions in one simple transaction.
-
-(TODO) Documentation upcoming...
+[A ERC20 token](sample-integrations/dividends-rights-token-demo) that tokenizes units in the [Instant Distribution Agreements](https://docs.superfluid.finance/tutorials/instant-distribution/).
 
 Further Readings
 ================
