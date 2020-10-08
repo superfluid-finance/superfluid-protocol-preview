@@ -4,7 +4,9 @@ Flow Lottery Game
 A game of chance built on Superfluid. Users join the game by sending a stream to our contract.
 All incoming streams are summed and the resulting reward stream is sent to the winner, until a new one is chosen!
 
-Read more about how to build this game from [this medium article](PLACE_HOLDER)
+Read more about how to build this game from [this medium article](https://medium.com/superfluid-blog/hacking-on-superfluid-bbb9ade94f98).
+
+A version works for the goerli testnet is also deployed to [https://flowlottery.eth.link/](https://flowlottery.eth.link/).
 
 Development
 ===========
