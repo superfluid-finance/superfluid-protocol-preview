@@ -3,6 +3,7 @@ const {
     toWad,
     toBN,
 } = require("@decentral.ee/web3-helpers");
+const { expectRevert } = require("@openzeppelin/test-helpers");
 const deployFramework = require("@superfluid-finance/ethereum-contracts/scripts/deploy-framework");
 const deployTestToken = require("@superfluid-finance/ethereum-contracts/scripts/deploy-test-token");
 const deploySuperToken = require("@superfluid-finance/ethereum-contracts/scripts/deploy-super-token");
@@ -111,6 +112,10 @@ contract("LotterySuperApp", accounts => {
             createPlayBatchCall(100),
             { from: bob }
         );
+        await expectRevert(sf.host.batchCall(
+            createPlayBatchCall(0),
+            { from: bob }
+        ), "Flow already exist");
         assert.equal((await app.currentWinner.call()).player, bob);
         assert.equal(
             (await sf.agreements.cfa.getNetFlow(daix.address, app.address)).toString(),

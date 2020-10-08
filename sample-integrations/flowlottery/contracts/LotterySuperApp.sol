@@ -14,6 +14,7 @@ import {
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol";
 
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/EnumerableSet.sol";
 
 
 contract LotterySuperApp is Ownable, ISuperApp { 
@@ -30,8 +31,8 @@ contract LotterySuperApp is Ownable, ISuperApp {
     IConstantFlowAgreementV1 private _cfa; // the stored constant flow agreement class address
     ISuperToken private _acceptedToken; // accepted token
 
-    address[] private _players;
-    mapping (address => uint) private _playerIndices;
+    EnumerableSet.AddressSet private _playersSet;
+    using EnumerableSet for EnumerableSet.AddressSet;
     address private _winner;
 
     constructor(
@@ -110,13 +111,7 @@ contract LotterySuperApp is Ownable, ISuperApp {
         (,int96 flowRate,,) = IConstantFlowAgreementV1(agreementClass).getFlowByID(_acceptedToken, agreementId);
         require(flowRate >= _MINIMUM_FLOW_RATE, _ERR_STR_LOW_FLOW_RATE);
 
-        // add new player to the list
-        if (_playerIndices[player] == 0) {
-            _players.push(player);
-            _playerIndices[player] = _players.length;
-        } else {
-            revert("LotterySuperApp: Already in the game");
-        }
+        _playersSet.add(player);
 
         // charge one ticket
         tickets[player]--; 
@@ -133,18 +128,7 @@ contract LotterySuperApp is Ownable, ISuperApp {
     {
         (,,address player,,) = _host.decodeCtx(ctx);
 
-        // remove player from the list
-        address lastPlayer = _players[_players.length - 1];
-        if (lastPlayer != player) {
-            uint playerIndex = _playerIndices[player] - 1;
-            _playerIndices[player] = 0;
-            _players[playerIndex] = lastPlayer;
-            _players.pop();
-            _playerIndices[lastPlayer] = playerIndex + 1;
-        } else {
-            _playerIndices[player] = 0;
-            _players.pop();
-        }
+        _playersSet.remove(player);
 
         return _draw(player, ctx);
     }
@@ -159,20 +143,20 @@ contract LotterySuperApp is Ownable, ISuperApp {
     {
         address oldWinner = _winner;
 
-        if (_players.length > 0) {
+        if (_playersSet.length() > 0) {
             // use block hash
-            _winner = _players[
+            _winner = _playersSet.at(
                 // not the most perfect randomness source
                 // DO NOT USE blockhash(block.number) though
                 uint(keccak256(abi.encodePacked(
                     player,
-                    _players.length,
+                    _playersSet.length(),
                     blockhash(block.number - 1),
                     block.timestamp // this is where could be manipulated by miner...
                 )))
                 %
-                _players.length
-            ];
+                _playersSet.length()
+            );
         } else {
             _winner = address(0);
         }
