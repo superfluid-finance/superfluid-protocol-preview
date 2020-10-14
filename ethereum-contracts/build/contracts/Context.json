@@ -5,15 +5,12 @@
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
-  "sourceMap": "",
-  "deployedSourceMap": "",
   "compiler": {
     "name": "solc",
     "version": "0.7.1+commit.f4a555be.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-10-02T14:34:18.654Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
