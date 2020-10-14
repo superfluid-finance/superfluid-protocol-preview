@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 
-PACKAGE_VERSION=0.1.2-preview-20201014-fix2
+PACKAGE_VERSION=0.1.2-preview-20201014-fix3
 
 cd "$(dirname "$0")"
 
