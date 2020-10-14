@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 
-PREVIEW_VERSION=0.1.2-preview-20201014
+PACKAGE_VERSION=0.1.2-preview-20201014-fix2
 
 cd "$(dirname "$0")"
 
@@ -22,6 +22,7 @@ else (
     fi
 )
 
+rm -rf ethereum-contracts/{build,contracts,js-sdk,test,scripts}
 cp -R \
     ./ethereum-contracts-v0.1/{README.md,package.json,package-lock.json,truffle-config.js} \
     ./ethereum-contracts-v0.1/{build,contracts,js-sdk,test,scripts} \
@@ -36,8 +37,13 @@ cp -R \
         jq 'del(.source,.sourcePath,.sourceMap,.deployedSourceMap,.ast,.legacyAST,.updatedAt)' $i.bak > $i
         rm -f $i.bak
     done 
-    jq ".version=\"${PREVIEW_VERSION}\"|del(.publishConfig)" package.json > package.json.new
+    jq ".version=\"${PACKAGE_VERSION}\"|del(.publishConfig)" package.json > package.json.new
     mv package.json.new package.json
-    jq ".version=\"${PREVIEW_VERSION}\"" package-lock.json > package-lock.json.new
+    jq ".version=\"${PACKAGE_VERSION}\"" package-lock.json > package-lock.json.new
     mv package-lock.json.new package-lock.json
 )
+
+
+# to depoy
+# GOERLI_GAS_PRICE=100e9 RELEASE_VERSION=0.1.2-preview-20201014 npx truffle exec --network goerli scripts/deploy-test-environment.js
+
