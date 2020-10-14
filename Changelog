@@ -1,0 +1,8 @@
+0.1.2-preview-20201014-fix3
+
+  * This change is backward incompatible. New deployment is available at
+  version `0.1.2-preview-20201014`.
+  * Fixed a bug in the updateFlow callback.
+  * SuperToken is now ERC-777, in order to test locally it is recommended to
+  add `scripts/deploy-erc1820` usage to your migrations. See projects in
+  sample-integrations.
