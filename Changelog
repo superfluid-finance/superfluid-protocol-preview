@@ -1,3 +1,7 @@
+0.1.2-preview-20201014-fix5
+
+  * Breaking change: using new resolver address for goerli
+
 0.1.2-preview-20201014-fix3
 
   * This change is backward incompatible. New deployment is available at
