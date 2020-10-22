@@ -25,7 +25,7 @@ import { flowForHumans, showTick } from "./utils/utils";
 import GET_TRANSFERS from "./graphql/subgraph";
 const TruffleContract = require("@truffle/contract");
 
-const APP_ADDRESS = "0x4690Fa515cfEC6afb03bC5B80FA0De2BD9e1103b"; // previous one, with 5 plyaers in "0x358495191298BC25f5c3bD0f3d64C0CC17aC6f2E";
+const APP_ADDRESS = "0x3bf1960Eb675f087208710B7Ec21FB5508576748";
 const MINIMUM_GAME_FLOW_RATE = "3858024691358";
 const LotterySuperApp = TruffleContract(require("./LotterySuperApp.json"));
 
@@ -248,8 +248,7 @@ function App() {
 
     sf = new SuperfluidSDK.Framework({
       chainId: 5,
-      //version: "master",
-      version: "preview-20200928",
+      version: "0.1.2-preview-20201014",
       web3Provider: newProvider
     });
     await sf.initialize();
