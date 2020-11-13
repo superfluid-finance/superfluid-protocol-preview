@@ -1,0 +1,33 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "browserslist": {
+    "development": [
+      "last 1 version"
+    ],
+    "production": [
+      "defaults",
+      "not IE 11",
+      "not IE_Mob 11"
+    ]
+  },
+  "dependencies": {
+    "@ethersproject/contracts": "^5.0.5",
+    "@ethersproject/providers": "^5.0.6",
+    "@ethersproject/units": "^5.0.6",
+    "@redwoodjs/forms": "^0.20.0",
+    "@redwoodjs/router": "^0.20.0",
+    "@redwoodjs/web": "^0.20.0",
+    "@styled-system/theme-get": "^5.1.2",
+    "@superfluid-finance/ethereum-contracts": "^0.1.2-preview-20201014-fix5",
+    "@truffle/contract": "^4.2.29",
+    "emanator-contracts": "1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-countdown-circle-timer": "^2.3.7",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.0",
+    "styled-system": "^5.1.5"
+  }
+}

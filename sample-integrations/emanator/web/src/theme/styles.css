@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Averta', Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+.box-shadow {
+  box-shadow: 0px 6px 20px rgba(14, 16, 60, 0.1);
+
+  &-small {
+    box-shadow: 0px 2px 4px rgba(14, 16, 60, 0.15);
+  }
+
+  &-widget {
+    box-shadow: 0px 3px 15px rgba(14, 16, 60, 0.08),
+      0px 1px 3px rgba(14, 16, 60, 0.15);
+  }
+}
+
+/* Fix for layout */
+#___gatsby {
+  height: 100%;
+}
+
+#___gatsby > div:first-child {
+  height: 100%;
+}

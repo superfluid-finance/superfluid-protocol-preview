@@ -1,0 +1,36 @@
+datasource DS {
+  // optionally set multiple providers
+  // example: provider = ["sqlite", "postgresql"]
+  provider = "sqlite"
+  url = "***"
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+}
+
+// Define your own datamodels here and run `yarn redwood db save` to create
+// migrations for them.
+
+
+model Bid {
+  id Int @id @default(autoincrement())
+  amount Int
+  auction Auction @relation(fields: [auctionAddress], references: [address])
+  auctionAddress String
+}
+
+model Auction {
+  id Int @id @default(autoincrement())
+  address String @unique
+  name String
+  winLength Int
+  description String?
+  createdAt  DateTime  @default(now())
+  status String @default("started")
+  highBid Int @default(0)
+  generation Int @default(0)
+  revenue Int @default(0)
+  bids Bid[]
+}
