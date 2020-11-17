@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "web",
+      "contracts",
+      "js-sdk"
+    ]
+  },
+  "scripts": {
+    "deploy:setup": "pm2 deploy pm2.config.js production setup",
+    "deploy": "pm2 deploy pm2.config.js production deploy"
+  },
+  "devDependencies": {
+    "@redwoodjs/core": "^0.20.0",
+    "pm2": "^4.5.0"
+  },
+  "eslintConfig": {
+    "extends": "@redwoodjs/eslint-config"
+  },
+  "engines": {
+    "node": ">=12",
+    "yarn": ">=1.15"
+  }
+}

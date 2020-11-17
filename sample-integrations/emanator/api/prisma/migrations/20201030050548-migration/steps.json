@@ -1,0 +1,43 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteModel",
+      "model": "User"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Bid",
+      "field": "amount",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Bid",
+      "field": "owner"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Bid",
+      "field": "ownerAddress"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Auction",
+      "field": "winLength",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Auction",
+      "field": "owner"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Auction",
+      "field": "ownerAddress"
+    }
+  ]
+}
